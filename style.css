@@ -1,0 +1,120 @@
+body {
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfafa; 
+    color: rgb(0, 0, 0); 
+}
+
+p {
+    font-size: 22px;
+}
+.content-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-image {
+    margin-left: 20px;
+    width: 200px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: #5b2a5f; /* A light color, in this case, khaki */
+    transition: color 0.5s ease; /* Adds a transition effect */
+    font-weight: bold; /* Makes the text bold */
+}
+
+a:hover {
+    color: rgb(255, 0, 13); /* Changes color to orange on hover */
+}
+
+header {
+    padding: 3rem 0;
+}
+
+header, footer {
+    padding: 10px;
+    background: #ded6ae;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+}
+
+header .header-container {
+    position: relative; /* Relative positioning for the container */
+    text-align: center;
+}
+
+.header-container {
+    position: relative; /* Existing */
+    text-align: center; /* Existing */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the elements */
+    justify-content: center; /* Horizontally center the elements */
+    flex-direction: column;
+}
+
+.header-image {
+    margin-right: 1rem; /* Add some space between the image and text */
+    height: 300px; /* Adjust the size as needed */
+    width: auto; /* Maintain the aspect ratio */
+}
+
+.text-and-logos {
+    text-align: center; /* Center the text and logos */
+}
+
+.logos {
+    display: flex; /* Use flexbox for logo alignment */
+    justify-content: center; /* Center the logos horizontally */
+    gap: 1rem; /* Add space between logos */
+}
+
+.logo {
+    height: 70px; /* Small size for logos */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Transition effect for the transform property */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+nav {
+    /* Increase padding and margin for the nav bar */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4; /* Example background color */
+    text-align: center; /* Center the navigation links */
+}
+
+nav a {
+    /* Increase font size and padding for each link */
+    font-size: 30px; /* Adjust the size as needed */
+    padding: 10px 15px; /* Adjust padding as needed */
+    margin: 0 10px; /* Space between links */
+    color: #333; /* Text color */
+    text-decoration: none; /* Removes underline from links */
+}
+
+nav a:hover {
+    /* Style for hover effect */
+    background-color: #ddd; /* Example hover background color */
+    color: #000; /* Example hover text color */
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+}
