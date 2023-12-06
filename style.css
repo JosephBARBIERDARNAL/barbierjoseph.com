@@ -118,3 +118,56 @@ hr {
     height: 2px;
     background-color: black;
 }
+
+.job-icon {
+    height: 40px;  /* Adjust the size as needed */
+    width: auto;   /* Adjust the size as needed */
+    vertical-align: middle;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.job-icon:hover {
+    transform: scale(1.1);  /* Increase the size by 50% on hover */
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project {
+    flex-basis: 48%; /* Adjust as needed for spacing */
+}
+
+.project-image {
+    width: 90%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+.project-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.img-simple {
+    width: 100px;       /* Set the width of the image to 100px */
+    display: block;     /* Makes the image block level for easy centering */
+    margin: 0 auto;     /* Centers the image in its container */
+    border: none;       /* Removes any border from the image */
+}
+
+.arrow {
+    width: 100px;       /* Set the width of the image to 100px */
+    height: auto;
+    display: block;     /* Makes the image block level for easy centering */
+}
+  
+  
