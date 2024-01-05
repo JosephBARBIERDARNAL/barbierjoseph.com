@@ -11,6 +11,7 @@ body {
 p {
     font-size: 22px;
 }
+
 .content-container {
     display: flex;
     align-items: flex-start;
@@ -24,7 +25,7 @@ p {
 }
 
 .container {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
@@ -40,11 +41,11 @@ a:hover {
 }
 
 header {
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
 
 header, footer {
-    padding: 10px;
+    padding: 1px;
     background: #ded6ae;
     text-align: center;
     color: #000000;
@@ -138,7 +139,7 @@ hr {
 }
 
 .project {
-    flex-basis: 48%; /* Adjust as needed for spacing */
+    flex-basis: 30%; /* Adjust as needed for spacing */
 }
 
 .project-image {
@@ -163,11 +164,16 @@ hr {
     margin: 0 auto;     /* Centers the image in its container */
     border: none;       /* Removes any border from the image */
 }
-
-.arrow {
-    width: 100px;       /* Set the width of the image to 100px */
-    height: auto;
-    display: block;     /* Makes the image block level for easy centering */
-}
   
+.small-image {
+    width: 40%; /* or any size you prefer */
+    height: auto; /* keeps the aspect ratio intact */
+    display: inline-block; /* places images next to each other */
+    margin-right: 10px; /* optional, adds some space between the images */
+}
+
+.centered-container {
+    text-align: center; /* centers inline elements like images */
+}
+
   
