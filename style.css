@@ -177,3 +177,27 @@ hr {
 }
 
   
+
+
+
+@media (max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
+
+    .profile-image {
+        margin-left: 0;
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    p {font-size: 16px;}
+    h1 {font-size: 35px;}
+    h2 {font-size: 25px;}
+    h3 {font-size: 20px;}
+}
