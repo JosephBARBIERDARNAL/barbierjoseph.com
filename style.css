@@ -176,6 +176,13 @@ hr {
     text-align: center; /* centers inline elements like images */
 }
 
+/* center IG emebed */
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
   
 
 
