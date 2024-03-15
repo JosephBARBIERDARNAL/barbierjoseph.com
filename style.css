@@ -1,210 +1,61 @@
-body {
-    font-family: Trebuchet MS, sans-serif;
-    font-size: 22px;
-    line-height: 1.6;
+body,
+html {
     margin: 0;
     padding: 0;
-    background-color: #fdfafa; 
-    color: rgb(0, 0, 0); 
-}
-
-p {
-    font-size: 22px;
-}
-
-.content-container {
-    display: flex;
-    align-items: flex-start;
-}
-
-.profile-image {
-    margin-left: 20px;
-    width: 200px;
-    height: auto;
-    margin-top: 15px;
-}
-
-.container {
-    width: 60%;
-    margin: auto;
-}
-
-a {
-    text-decoration: none; /* Removes underline */
-    color: #5b2a5f; /* A light color, in this case, khaki */
-    transition: color 0.5s ease; /* Adds a transition effect */
-    font-weight: bold; /* Makes the text bold */
-}
-
-a:hover {
-    color: rgb(255, 0, 13); /* Changes color to orange on hover */
-}
-
-header {
-    padding: 1rem 0;
-}
-
-header, footer {
-    padding: 1px;
-    background: #ded6ae;
-    text-align: center;
-    color: #000000;
-    width: 100%;
-}
-
-header .header-container {
-    position: relative; /* Relative positioning for the container */
-    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .header-container {
-    position: relative; /* Existing */
-    text-align: center; /* Existing */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center the elements */
-    justify-content: center; /* Horizontally center the elements */
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
-.header-image {
-    margin-right: 1rem; /* Add some space between the image and text */
-    height: 300px; /* Adjust the size as needed */
-    width: auto; /* Maintain the aspect ratio */
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.text-and-logos {
-    text-align: center; /* Center the text and logos */
+.profile-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
-.logos {
-    display: flex; /* Use flexbox for logo alignment */
-    justify-content: center; /* Center the logos horizontally */
-    gap: 1rem; /* Add space between logos */
+.profile-description {
+    max-width: 60%;
+    text-align: left;
+}
+p {
+    font-size: 24px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* Ensure this container spans the full width */
+    margin-top: 20px;
 }
 
 .logo {
-    height: 70px; /* Small size for logos */
-    width: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Transition effect for the transform property */
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.1); /* Slightly enlarge the logo on hover */
-}
-
-nav {
-    /* Increase padding and margin for the nav bar */
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f4f4f4; /* Example background color */
-    text-align: center; /* Center the navigation links */
-}
-
-nav a {
-    /* Increase font size and padding for each link */
-    font-size: 30px; /* Adjust the size as needed */
-    padding: 10px 15px; /* Adjust padding as needed */
-    margin: 0 10px; /* Space between links */
-    color: #333; /* Text color */
-    text-decoration: none; /* Removes underline from links */
-}
-
-nav a:hover {
-    /* Style for hover effect */
-    background-color: #ddd; /* Example hover background color */
-    color: #000; /* Example hover text color */
-}
-
-hr {
-    height: 2px;
-    background-color: black;
-}
-
-.job-icon {
-    height: 40px;  /* Adjust the size as needed */
-    width: auto;   /* Adjust the size as needed */
-    vertical-align: middle;
-    margin-right: 5px;
-    transition: transform 0.3s ease;
-}
-
-.job-icon:hover {
-    transform: scale(1.1);  /* Increase the size by 50% on hover */
-}
-
-.project-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.project {
-    flex-basis: 30%; /* Adjust as needed for spacing */
-}
-
-.project-image {
-    width: 90%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.project-image:hover {
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
-}
-
-.project-link {
-    display: block;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-.img-simple {
-    width: 100px;       /* Set the width of the image to 100px */
-    display: block;     /* Makes the image block level for easy centering */
-    margin: 0 auto;     /* Centers the image in its container */
-    border: none;       /* Removes any border from the image */
-}
-  
-.small-image {
-    width: 40%; /* or any size you prefer */
-    height: auto; /* keeps the aspect ratio intact */
-    display: inline-block; /* places images next to each other */
-    margin-right: 10px; /* optional, adds some space between the images */
-}
-
-.centered-container {
-    text-align: center; /* centers inline elements like images */
-}
-
-/* center IG emebed */
-blockquote {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-  
-
-
-
-@media (max-width: 1000px) {
-    .container {
-        width: 90%;
-    }
-
-    .profile-image {
-        margin-left: 0;
-        width: 60%;
-        display: block;
-        margin: auto;
-    }
-
-    .content-container {
-        flex-direction: column;
-    }
-
-    p {font-size: 16px;}
-    h1 {font-size: 35px;}
-    h2 {font-size: 25px;}
-    h3 {font-size: 20px;}
+    transform: scale(1.1);
 }
