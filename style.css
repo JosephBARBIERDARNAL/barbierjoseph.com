@@ -13,62 +13,6 @@ body {
 
 
 
-
-a {
-    text-decoration: none; /* Removes underline */
-    color: #5b2a5f; /* A light color, in this case, khaki */
-    transition: color 0.5s ease; /* Adds a transition effect */
-    font-weight: bold; /* Makes the text bold */
-}
-
-a:hover {
-    color: rgb(255, 0, 13); /* Changes color to orange on hover */
-}
-
-header {
-    padding: 1rem 0;
-}
-
-header, footer {
-    padding: 1px;
-    background: #ded6ae;
-    text-align: center;
-    color: #000000;
-    width: 100%;
-}
-
-header .header-container {
-    position: relative; /* Relative positioning for the container */
-    text-align: center;
-}
-
-.header-container {
-    position: relative; /* Existing */
-    text-align: center; /* Existing */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center the elements */
-    justify-content: center; /* Horizontally center the elements */
-    flex-direction: column;
-}
-
-.header-image {
-    margin-right: 1rem; /* Add some space between the image and text */
-    height: 300px; /* Adjust the size as needed */
-    width: auto; /* Maintain the aspect ratio */
-}
-
-.text-and-logos {
-    text-align: center; /* Center the text and logos */
-}
-
-
-
-
-hr {
-    height: 2px;
-    background-color: black;
-}
-
 .job-icon {
     height: 40px;  /* Adjust the size as needed */
     width: auto;   /* Adjust the size as needed */
