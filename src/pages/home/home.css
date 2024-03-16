@@ -17,10 +17,15 @@
     align-items: flex-start;
 }
 
-p {font-size: 22px;}
+p {
+    font-size: 22px;
+    margin: 6px;
+}
 h2 {font-size: 35px;}
 
-
+li {
+    margin: 6px 0;
+}
 
 a {
     text-decoration: none;
@@ -35,4 +40,5 @@ a:hover {
 hr {
     height: 1.2px;
     background-color: black;
+    margin-bottom: 20px;
 }

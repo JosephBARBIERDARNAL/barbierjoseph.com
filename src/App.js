@@ -3,7 +3,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home';
-import About from './pages/about/about';
+import Services from './pages/services/services';
 import './App.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" exact element={<Home/>} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/services" element={<Services/>} />
       </Routes>
     </Router>
   );

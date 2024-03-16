@@ -1,0 +1,27 @@
+
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    /* Adjust the space between the images as needed */
+}
+
+.image-item {
+    flex: 1;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-item p {
+    margin-top: 8px;
+    color: cadetblue;
+    font-style: italic;
+    text-align: left;
+}
