@@ -9,10 +9,10 @@ function Header() {
                     <a href='index.html'><h1>Joseph Barbier</h1></a>
                     <div class="logos">
                         <a href="https://www.linkedin.com/in/joseph-barbier-4ab531224/" target="_blank">
-                            <img src="img/linkedin.png" alt="LinkedIn" class="logo"/>
+                            <img src={`${process.env.PUBLIC_URL}/img/github.png`} alt="LinkedIn" class="logo"/>
                         </a>
                         <a href="https://github.com/JosephBARBIERDARNAL" target="_blank">
-                            <img src="img/github.png" alt="GitHub" class="logo"/>
+                            <img src={`${process.env.PUBLIC_URL}/img/linkedin.png`} alt="GitHub" class="logo"/>
                         </a>
                     </div>
                 </div>

@@ -76,21 +76,6 @@ header .header-container {
     text-align: center; /* Center the text and logos */
 }
 
-.logos {
-    display: flex; /* Use flexbox for logo alignment */
-    justify-content: center; /* Center the logos horizontally */
-    gap: 1rem; /* Add space between logos */
-}
-
-.logo {
-    height: 70px; /* Small size for logos */
-    width: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Transition effect for the transform property */
-}
-
-.logo:hover {
-    transform: scale(1.1); /* Slightly enlarge the logo on hover */
-}
 
 nav {
     /* Increase padding and margin for the nav bar */

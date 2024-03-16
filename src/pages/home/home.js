@@ -19,7 +19,7 @@ const Home = () => {
                             and more generally data mining. In my remaining free time, I do sport, read and spend time with my friends.
                         </p>
                     </div>
-                    <img src="img/joseph.png" alt="Joseph Barbier" className="profile-image" />
+                    <img src={`${process.env.PUBLIC_URL}/img/joseph.png`} alt="Joseph Barbier" className="profile-image" />
                 </div>
                 <p>
                     Since March, I've been working as a data science/viz/software intern with <a href="https://www.yan-holtz.com/" target="_blank" rel="noopener noreferrer">Yan Holtz</a>.
