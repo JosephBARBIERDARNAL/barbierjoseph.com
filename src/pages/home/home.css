@@ -1,5 +1,9 @@
 
-
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .profile-image {
     margin-left: 20px;
@@ -11,6 +15,7 @@
 .container {
     width: 60%;
     margin: auto;
+    padding-bottom: 2.5rem;
 }
 .content-container {
     display: flex;
@@ -21,7 +26,10 @@ p {
     font-size: 22px;
     margin: 6px;
 }
-h2 {font-size: 35px;}
+h2 {
+    font-size: 35px;
+    margin-top: 80px;
+}
 
 li {
     margin: 6px 0;
