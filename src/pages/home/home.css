@@ -7,7 +7,17 @@
     height: auto;
     margin-top: 15px;
 }
+
 .container {
     width: 60%;
     margin: auto;
+}
+
+p {
+    font-size: 22px;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
 }

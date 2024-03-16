@@ -8,26 +8,11 @@ body {
     color: rgb(0, 0, 0); 
 }
 
-p {
-    font-size: 22px;
-}
 
-.content-container {
-    display: flex;
-    align-items: flex-start;
-}
 
-.profile-image {
-    margin-left: 20px;
-    width: 200px;
-    height: auto;
-    margin-top: 15px;
-}
 
-.container {
-    width: 60%;
-    margin: auto;
-}
+
+
 
 a {
     text-decoration: none; /* Removes underline */
@@ -77,28 +62,7 @@ header .header-container {
 }
 
 
-nav {
-    /* Increase padding and margin for the nav bar */
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f4f4f4; /* Example background color */
-    text-align: center; /* Center the navigation links */
-}
 
-nav a {
-    /* Increase font size and padding for each link */
-    font-size: 30px; /* Adjust the size as needed */
-    padding: 10px 15px; /* Adjust padding as needed */
-    margin: 0 10px; /* Space between links */
-    color: #333; /* Text color */
-    text-decoration: none; /* Removes underline from links */
-}
-
-nav a:hover {
-    /* Style for hover effect */
-    background-color: #ddd; /* Example hover background color */
-    color: #000; /* Example hover text color */
-}
 
 hr {
     height: 2px;
