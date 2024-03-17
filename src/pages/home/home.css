@@ -22,31 +22,3 @@ body {
     align-items: flex-start;
 }
 
-p {
-    font-size: 22px;
-    margin: 6px;
-}
-h2 {
-    font-size: 35px;
-    margin-top: 80px;
-}
-
-li {
-    margin: 6px 0;
-}
-
-a {
-    text-decoration: none;
-    color: #5b2a5f;
-    transition: color 0.5s ease;
-    font-weight: bold;
-}
-a:hover {
-    color: rgb(255, 0, 13);
-}
-
-hr {
-    height: 1.2px;
-    background-color: black;
-    margin-bottom: 20px;
-}

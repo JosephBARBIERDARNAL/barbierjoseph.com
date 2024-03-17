@@ -7,14 +7,14 @@ const projects = [
         title: 'Reviving Henri Rousseau',
         description: 'Building an interface to speak with the late Henri Rousseau, as part of an exhibition',
         imageUrl: `${process.env.PUBLIC_URL}/img/douanier.png`,
-        projectLink: '/projects'
+        projectLink: '/seuls-sous-les-pins'
     },
     {
         id: 2,
         title: 'AI safety talks',
         description: 'Conferences on safety issues related to large language models at Ecole 42 and Bordeaux University',
         imageUrl: `${process.env.PUBLIC_URL}/img/effisciences.png`,
-        projectLink: '/projects'
+        projectLink: '/ai-talks'
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const ProjectItem = ({ title, description, imageUrl, projectLink }) => {
             <div className="project-info">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <a href={projectLink} target="_blank" rel="noopener noreferrer">View Project</a>
+                <a href={projectLink}>View Project</a>
             </div>
         </div>
     );

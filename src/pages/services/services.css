@@ -5,7 +5,6 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
-    /* Adjust the space between the images as needed */
 }
 
 .image-item {
@@ -19,7 +18,7 @@
     object-fit: cover;
 }
 
-.image-item p {
+.image-item {
     margin-top: 8px;
     color: cadetblue;
     font-style: italic;

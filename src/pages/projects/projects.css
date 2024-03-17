@@ -1,0 +1,26 @@
+
+
+.small-image {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centered-container {
+    text-align: center;
+}
+
+p.descriptionImage {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    color: cadetblue;
+    font-style: italic;
+    text-align: center;
+}
+
+.projectDescription p {
+    margin-bottom: 25px;
+}
