@@ -19,7 +19,7 @@ function Services() {
                 <br/>
 
                 <h2>Visualizations</h2><hr />
-                <p style={{fontSize: '28px', letterSpacing: '-1px'}}>
+                <p style={{fontSize: '24px', letterSpacing: '-1px'}}>
                     Here are some visualizations I've made:
                 </p><br/>
                 <div className="image-gallery">

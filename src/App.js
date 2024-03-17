@@ -8,6 +8,7 @@ import Projects from './pages/projects/projects';
 import About from './pages/about/about';
 import SeulsSousLesPins from './pages/projects/seuls-sous-les-pins';
 import AITalks from './pages/projects/ai-talks';
+import Cieri from './pages/projects/cieri';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/seuls-sous-les-pins" element={<SeulsSousLesPins />} />
         <Route path="/ai-talks" element={<AITalks />} />
+        <Route path="/cieri" element={<Cieri />} />
       </Routes>
     </Router>
   );

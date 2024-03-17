@@ -21,7 +21,7 @@ const projects = [
         title: 'AutoSHARE',
         description: 'Automating the cleaning, analysis and modelling of the SHARE data',
         imageUrl: `${process.env.PUBLIC_URL}/img/cieri-analytics.png`,
-        projectLink: '/projects'
+        projectLink: '/cieri'
     }
 ];
 

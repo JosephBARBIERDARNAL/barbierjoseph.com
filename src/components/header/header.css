@@ -20,6 +20,9 @@ h1.name {
     color: #333;
     margin: 0;
 }
+h1.name:hover {
+    color: #3a1b3d;
+}
 
 
 

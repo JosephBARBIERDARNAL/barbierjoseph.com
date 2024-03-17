@@ -18,9 +18,10 @@
     object-fit: cover;
 }
 
-.image-item {
+.image-item p {
     margin-top: 8px;
     color: cadetblue;
     font-style: italic;
     text-align: left;
+    font-size: 16px;
 }
