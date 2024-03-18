@@ -25,6 +25,15 @@ const Cieri = () => {
                             <p>
                                 The aim is also to encourage and facilitate <b>reproductible research</b>. The project is <b>open source</b> and currently a work in progress.
                             </p>
+                            <h3>Articles</h3>
+                            <p>
+                                We are also writing articles on the <a href='https://www.cieri-analytics.com/articles.html' target="_blank" rel="noreferrer">website</a> about concrete questions in statistics such as:
+                                <ul>
+                                    <li><a href='https://www.cieri-analytics.com/articles/large-sample-size-and-pvalue.html' target='_blank' rel='noreferrer'>Sample size and p-value: impact and relationship</a></li>
+                                    <li><a href='https://www.cieri-analytics.com/articles/all-other-things-being-equal.html' target='_blank' rel='noreferrer'>What "all other things being equal" means</a></li>
+                                    <li><a href='https://www.cieri-analytics.com/articles/how-to-work-with-share-python-r.html' target='_blank' rel='noreferrer'>How to work with the SHARE database</a></li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>

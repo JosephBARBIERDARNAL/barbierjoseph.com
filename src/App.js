@@ -9,6 +9,7 @@ import About from './pages/about/about';
 import SeulsSousLesPins from './pages/projects/seuls-sous-les-pins';
 import AITalks from './pages/projects/ai-talks';
 import Cieri from './pages/projects/cieri';
+import StatisticalJourney from './pages/projects/statistical-journey';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/seuls-sous-les-pins" element={<SeulsSousLesPins />} />
         <Route path="/ai-talks" element={<AITalks />} />
         <Route path="/cieri" element={<Cieri />} />
+        <Route path="/statistical-journey" element={<StatisticalJourney />} />
       </Routes>
     </Router>
   );

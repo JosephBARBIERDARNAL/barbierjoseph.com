@@ -23,6 +23,12 @@ function About() {
                 </p>
                 <ProjectGallery />
 
+                <h2 id="about">Education</h2><hr />
+                <p>
+                    I did my whole education at Bordeaux University and I will soon have finished my studies!
+                </p>
+                
+
 
             </div> {/* End container */}
             <Footer />

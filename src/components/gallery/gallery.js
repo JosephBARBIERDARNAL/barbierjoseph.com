@@ -22,6 +22,13 @@ const projects = [
         description: 'Automating the cleaning, analysis and modelling of the SHARE data',
         imageUrl: `${process.env.PUBLIC_URL}/img/cieri-analytics.png`,
         projectLink: '/cieri'
+    },
+    {
+        id: 4,
+        title: 'Statistical Journey',
+        description: 'A website to learn about statistics with non-technical and narrative style',
+        imageUrl: `${process.env.PUBLIC_URL}/img/statisticaljourney.png`,
+        projectLink: '/statistical-journey'
     }
 ];
 

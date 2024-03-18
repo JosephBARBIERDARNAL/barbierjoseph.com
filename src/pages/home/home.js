@@ -32,9 +32,10 @@ const Home = () => {
                 <br />
 
                 <h2 id="contact">Services & Contact</h2><hr />
-                <p>I offer <a href='/services'>data analysis</a> freelance services. If that's something you're interested in, feel free to connect.</p>
-                <p>You can contact me at <b>joseph.barbierdarnal@gmail.com</b> or via <a href="https://www.linkedin.com/in/joseph-barbier-4ab531224/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-                </p>
+                <div className="text-content">
+                    <p>I offer <a href='/services'>data analysis</a> freelance services. If that's something you're interested in, feel free to connect.</p>
+                    <p>You can contact me at <b>joseph.barbierdarnal@gmail.com</b> or via <a href="https://www.linkedin.com/in/joseph-barbier-4ab531224/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+                </div>
             </div> 
             <Footer />
         </div>
