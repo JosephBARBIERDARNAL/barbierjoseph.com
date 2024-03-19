@@ -9,7 +9,6 @@ function Header() {
             <div className="header-container">
                 <a href='/'><h1 class='name'>Joseph Barbier</h1></a>
                 <nav>
-                    <a href="/projects"><b>Projects</b></a>
                     <a href="/services"><b>Services</b></a>
                     <a href="/about"><b>About</b></a>
                 </nav>

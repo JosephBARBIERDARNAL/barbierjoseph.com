@@ -11,8 +11,13 @@ function Services() {
 
                 <h2 id="services">Services</h2><hr />
                 <p>I offer (freelance) <b>data analysis</b> and <b>data visualization</b> services.
-                    I can help you to <b>understand your data</b> and create <b>beautiful visualizations</b>.
+                    I can help you to <b>understand your data</b>, create <b>beautiful visualizations</b>,
+                    develop <b>web applications</b> and more.
                 </p>
+                <p>
+                    I usually work with Python, R and SQL, and I do web development with either streamlit or shiny.
+                </p>
+                <br/>
                 <p>
                     If that's something you're interested in, feel free to contact me at <b>joseph.barbierdarnal@gmail.com</b>
                 </p>

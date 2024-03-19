@@ -3,6 +3,7 @@ import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import Timeline from '../../components/timeline/timeline';
 import ProjectGallery from '../../components/gallery/gallery';
+import EducationComponent from '../../components/education/education';
 import './about.css';
 
 function About() {
@@ -27,8 +28,7 @@ function About() {
                 <p>
                     I did my whole education at Bordeaux University and I will soon have finished my studies!
                 </p>
-                
-
+                <EducationComponent />
 
             </div> {/* End container */}
             <Footer />
