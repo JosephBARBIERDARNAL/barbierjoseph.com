@@ -1,0 +1,51 @@
+/* Timeline.css */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.timeline-item {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #f72c28;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-item:hover {
+    background-color: #f0f0f0;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.period {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.content {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.content {
+    padding: 0 10px;
+}
+
+.content:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
