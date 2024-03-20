@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e062bd42.css",
-    "main.js": "/static/js/main.e9468176.js",
-    "static/js/453.d672a3f6.chunk.js": "/static/js/453.d672a3f6.chunk.js",
-    "index.html": "/index.html",
-    "main.e062bd42.css.map": "/static/css/main.e062bd42.css.map",
-    "main.e9468176.js.map": "/static/js/main.e9468176.js.map",
-    "453.d672a3f6.chunk.js.map": "/static/js/453.d672a3f6.chunk.js.map"
+    "main.css": "/barbierjoseph.com/static/css/main.e062bd42.css",
+    "main.js": "/barbierjoseph.com/static/js/main.9b142014.js",
+    "static/js/453.d672a3f6.chunk.js": "/barbierjoseph.com/static/js/453.d672a3f6.chunk.js",
+    "index.html": "/barbierjoseph.com/index.html",
+    "main.e062bd42.css.map": "/barbierjoseph.com/static/css/main.e062bd42.css.map",
+    "main.9b142014.js.map": "/barbierjoseph.com/static/js/main.9b142014.js.map",
+    "453.d672a3f6.chunk.js.map": "/barbierjoseph.com/static/js/453.d672a3f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e062bd42.css",
-    "static/js/main.e9468176.js"
+    "static/js/main.9b142014.js"
   ]
 }
