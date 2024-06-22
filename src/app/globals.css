@@ -26,8 +26,8 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.project-title {
-  color: #660404
+.container{
+  max-width: 900px;
 }
 
 @layer utilities {
