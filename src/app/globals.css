@@ -30,6 +30,10 @@ body {
   max-width: 900px;
 }
 
+.inverted-image {
+  filter: invert(1);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

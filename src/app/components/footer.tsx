@@ -1,12 +1,37 @@
+import React from 'react';
+import Image from 'next/image';
+
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4 mt-8">
-      <div className="container mx-auto text-center">
-        <p>&copy; 2023 Joseph's Portfolio. All rights reserved.</p>
-        <div className="mt-2">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="mr-4">GitHub</a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="mr-4">LinkedIn</a>
-          <a href="mailto:your.email@example.com">Email</a>
+    <footer className="bg-black-800 text-white p-8 mt-8">
+      <h1 className="text-center text-xl pb-5">CONTACT</h1>
+      <div className="container mx-auto flex flex-col items-center">
+        
+        <div className="flex space-x-6 mb-4">
+          <a
+            href="https://github.com/JosephBARBIERDARNAL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform transition-transform hover:scale-110"
+          >
+            <Image src="/img/github.png" alt="GitHub" width={32} height={32} className="inverted-image"/>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/joseph-barbier-4ab531224/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform transition-transform hover:scale-110"
+          >
+            <Image src="/img/linkedin.png" alt="LinkedIn" width={32} height={32} className="inverted-image"/>
+          </a>
+          <a
+            href="https://x.com/joseph_barbier"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transform transition-transform hover:scale-110"
+          >
+            <Image src="/img/twitter.png" alt="Twitter" width={32} height={32} className="rounded inverted-image"/>
+          </a>
         </div>
       </div>
     </footer>
