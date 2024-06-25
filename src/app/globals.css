@@ -26,8 +26,46 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.linking {
+  color: rgb(247, 165, 57);
+  transition: color 0.2s ease;
+}
+
+.linking:hover {
+  color: rgb(254, 200, 129);
+}
+
 .container{
-  max-width: 900px;
+  max-width: 1200px;
+}
+
+.read-button {
+  background-color: #0c0c14;
+  transition: background-color 0.2s ease;
+}
+
+.read-button:hover {
+  background-color: #444464;
+}
+
+.other {
+  background-color: #0c0c14;
+}
+
+p, li {font-size: 20px;}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
 }
 
 .inverted-image {
