@@ -8,8 +8,14 @@ import { openSourceProjects, Repo } from './listOfProjects';
 const OpenSourceProject: React.FC<{ repo: Repo; isEven: boolean }> = ({ repo, isEven }) => {
   return (
     <div className={`flex items-start mb-16 ${isEven ? 'flex-row-reverse' : 'flex-row'} border-b border-gray-200 pb-8`}>
-      <div className={`w-1/3 px-4 flex justify-center`}>
-        <Image src={repo.imageUrl} alt={repo.name} width={100} height={100} className="rounded-lg shadow-lg" />
+      <div className={`w-1/4 px-4 flex justify-center`}>
+        <Image 
+          src={repo.imageUrl} 
+          alt={repo.name} 
+          width={repo.imageWidth} 
+          height={repo.imageHeight} 
+          className="rounded-lg shadow-lg" 
+        />
       </div>
       <div className={`w-2/3 px-4 ${isEven ? 'text-left' : 'text-right'}`}>
         <h2 className="text-2xl font-light mb-2">{repo.name}</h2>
@@ -38,7 +44,7 @@ const OpenSource: React.FC = () => {
       <main className="container mx-auto flex-grow p-8 animate-fadeIn">
         <h1 className="text-2xl mb-8 text-center">Open Source Contributions</h1>
         <p className="text-left mb-8 font-light">
-          I've contributed to many projects.
+          In all of the following projects, I am either a <b>contributor</b> or a <b>project owner</b>. I have not included my contributions to certain projects where they are not significant/relevant.
         </p>
 
         <Spacing size={3} />

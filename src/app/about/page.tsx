@@ -23,7 +23,7 @@ const About: React.FC = () => {
             My current occupations include:
           </p>
           <ul className="list-disc list-inside mb-4 pl-4">
-            <li>Full-time intern in data science, visualization and software with <Link className="linking"
+            <li>Full-time intern working on open source (data visualization and software) with <Link className="linking"
             href='https://www.yan-holtz.com/' target='_blank'>Yan Holtz</Link></li>
             <li>Building various <Link className="linking" href='https://github.com/JosephBARBIERDARNAL' target='_blank'>open source tools</Link> related to data science</li>
             <li>Blogging about statistics in our everyday life at <Link className="linking"
@@ -43,27 +43,27 @@ const About: React.FC = () => {
           
           {[
             {
-              title: "Open Source Data Science Intern",
+              title: "Open source developer intern - Dataviz Universe",
               period: "March 2024 - Present",
               description: "I'm working with Yan Holtz on a variety of projects, all data-related: an R package on ecology modeling, the Python/R Graph gallery sites, and other projects under discussion."
             },
             {
-              title: "Data Visualization Freelance",
+              title: "Data visualization developer - Freelance",
               period: "Aug 2023 - Jan 2024",
-              description: "The Python and R Graph Gallery websites are references on data visualization. I worked as a freelancer alongside my studies on the development of these sites, with the main aim of making them as exhaustive as possible. I obviously used Python and R, but also a little HTML/React for the web part, and Git for versioning."
+              description: "I worked as a freelancer alongside my studies on the development of the Python and R Graph Gallery websites. I mainly used Python and R, but also a little HTML/React for the web part, and Git for versioning."
             },
             {
-              title: "Data Science Intern at Wanteeed",
+              title: "Data science intern - Wanteeed",
               period: "Apr 2023 - Aug 2023",
               description: "Wanteeed is a French start-up offering a free browser extension and mobile application that automatically applies discount codes and/or cashback offers to users. My job was to try and better understand the company's data, particularly from a marketing and financial point of view, as well as to make predictions. I mainly worked with SQL and Looker, but also used Python for more specific tasks."
             },
             {
-              title: "Tutoring teacher at the University of Bordeaux",
+              title: "Tutoring teacher - Bordeaux University",
               period: "Sep 2022 - Nov 2022",
               description: "I have tutored students in their second year of a Bachelor's degree in Economics and Management at the University of Bordeaux. The classes were on microeconomics and the main concepts derived from it, such as general equilibrium, utility optimization with or without constraints, and Walrasian equilibrium."
             },
             {
-              title: "Data analyst / Research intern at CIERI",
+              title: "Data analyst / Research intern - CIERI",
               period: "Apr 2022 - Jul 2022",
               description: "I worked for the CIERI research center with Thomas Salanova on the relationship between socio-economic status and cancer. The work consisted mainly of a literature review, data cleaning and analysis with R. I used data from the SHARE study, Europe's largest social science study.I tried to determine the main social factors of cancer via logistic regressions, as well as to detect the presence of groups in individuals with unsupervised learning (k-prototypes algorithm)."
             }
