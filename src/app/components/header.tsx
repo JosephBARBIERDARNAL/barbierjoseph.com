@@ -1,10 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const navItems = [
-  { text: 'Open Source', slug: 'opensource' },
-  { text: 'Visualization', slug: 'dataviz' },
-  { text: 'Blog', slug: 'blog' },
-  { text: 'About', slug: 'about' },
+  { text: "Open Source", slug: "opensource" },
+  { text: "Visualization", slug: "dataviz" },
+  { text: "Blog", slug: "blog" },
+  { text: "About", slug: "about" },
 ];
 
 const Header: React.FC = () => {

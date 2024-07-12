@@ -26,14 +26,14 @@ export default function Home() {
         <Spacing size={1}/>
 
         <div className="mb-32 text-center font-light max-w-2xl mx-auto">
-          <h1 className="text-2xl mb-4">Hi! I'm Joseph</h1>
+          <h1 className="text-2xl mb-4">Hi! I"m Joseph</h1>
           <p className="mb-4">
-            I'm passionate about open-source development and data analysis. 
+            I"m passionate about open-source development and data analysis. 
             I have worked in multiple contexts (research, start-up, freelancing, open source)
             and on various topics (health, e-commerce, ecology, data visualization).
           </p>
           <p>
-            Today, I'm focusing on open source projects related to data processing: visualization,
+            Today, I"m focusing on open source projects related to data processing: visualization,
             modelling, and other tools.
           </p>
         </div>

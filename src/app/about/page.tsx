@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState } from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Spacing from '../components/spacing';
-import Link from 'next/link';
+import React, { useState } from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Spacing from "../components/spacing";
+import Link from "next/link";
 
 const About: React.FC = () => {
   const [activeExperience, setActiveExperience] = useState<number | null>(null);
@@ -24,13 +24,13 @@ const About: React.FC = () => {
           </p>
           <ul className="list-disc list-inside mb-4 pl-4">
             <li>Full-time intern working on open source (data visualization and software) with <Link className="linking"
-            href='https://www.yan-holtz.com/' target='_blank'>Yan Holtz</Link></li>
-            <li>Building various <Link className="linking" href='https://github.com/JosephBARBIERDARNAL' target='_blank'>open source tools</Link> related to data science</li>
+            href="https://www.yan-holtz.com/" target="_blank">Yan Holtz</Link></li>
+            <li>Building various <Link className="linking" href="https://github.com/JosephBARBIERDARNAL" target="_blank">open source tools</Link> related to data science</li>
             <li>Blogging about statistics in our everyday life at <Link className="linking"
-            href='https://www.statisticaljourney.com/' target='_blank'>statisticaljourney.com</Link></li>
+            href="https://www.statisticaljourney.com/" target="_blank">statisticaljourney.com</Link></li>
           </ul>
           <p>
-            I offer data analysis and data visualization <b>services</b>. I can help you to understand your data, create beautiful visualizations, develop web applications and more. If that's something you're interested in, feel free to contact me at <b>joseph.barbierdarnal@gmail.com</b>.
+            I offer data analysis and data visualization <b>services</b>. I can help you to understand your data, create beautiful visualizations, develop web applications and more. If that"s something you"re interested in, feel free to contact me at <b>joseph.barbierdarnal@gmail.com</b>.
           </p>
         </section>
 
@@ -75,7 +75,7 @@ const About: React.FC = () => {
             >
               <h3 className="text-2xl font-medium">{experience.title}</h3>
               <p className="italic text-gray-400">{experience.period}</p>
-              <p className={`mt-2 overflow-hidden transition-all duration-300 ${activeExperience === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+              <p className={`mt-2 overflow-hidden transition-all duration-300 ${activeExperience === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
                 {experience.description}
               </p>
             </div>

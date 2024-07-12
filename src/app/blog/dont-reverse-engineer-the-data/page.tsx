@@ -1,8 +1,8 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-import Spacing from "../components/spacing";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import Spacing from "../../components/spacing";
 
-const DataViz: React.FC = () => {
+const DRETD: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-black-100">
       <Header />
@@ -15,4 +15,4 @@ const DataViz: React.FC = () => {
   );
 };
 
-export default DataViz;
+export default DRETD;

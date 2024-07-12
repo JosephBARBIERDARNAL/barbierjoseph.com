@@ -3,8 +3,8 @@ import "./globals.css";
 import { Open_Sans } from "next/font/google";
 
 const myfont = Open_Sans({ 
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

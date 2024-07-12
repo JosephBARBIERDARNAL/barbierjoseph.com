@@ -33,7 +33,7 @@ export const openSourceProjects: Repo[] = [
     imageHeight: 100,
   },
   {
-    name: "Data to Viz",
+    name: "From Data to Viz",
     description: "Website designed to assist in chart selection, classifying chart types based on input data format. It uses a decision tree to guide users.",
     imageUrl: "/img/datatoviz.png",
     link: "https://github.com/holtzy/data_to_viz",
