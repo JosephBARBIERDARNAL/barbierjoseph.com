@@ -19,8 +19,16 @@ export const openSourceProjects: Repo[] = [
   {
     name: "Python Graph Gallery",
     description: "A collection of hundreds of graphs made with Python, of which I am one of the core contributors and currently active.",
-    imageUrl: "/img/gallery.png",
+    imageUrl: "/img/pythongallery.png",
     link: "https://github.com/holtzy/The-Python-Graph-Gallery",
+    imageWidth: 150,
+    imageHeight: 100,
+  },
+  {
+    name: "R Graph Gallery",
+    description: "A collection of hundreds of graphs made with R, of which I am one of the core contributors and currently active.",
+    imageUrl: "/img/rgallery.png",
+    link: "https://github.com/holtzy/R-Graph-Gallery",
     imageWidth: 150,
     imageHeight: 100,
   },
