@@ -35,6 +35,14 @@ body {
   color: rgb(254, 200, 129);
 }
 
+.code-btn {
+  background-color: rgb(179, 118, 39);
+}
+
+.code-btn:hover {
+  background-color: rgb(210, 139, 47);
+}
+
 .container{
   max-width: 1200px;
 }
