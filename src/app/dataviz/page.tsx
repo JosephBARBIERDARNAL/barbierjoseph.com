@@ -12,7 +12,7 @@ const DataViz: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <Spacing size={3}/>
-      <main className="container mx-auto flex-grow p-4">
+      <main className="container mx-auto flex-grow p-4 animate-fadeIn">
         <h1 className="text-4xl text-white mb-8">Data Visualization & Information design</h1>
         <div className="font-light">
           <p>Since the summer of 2023, when I started working for the Python Graph Gallery, I've started doing a lot of visualisation, particularly with matplotlib. I've discovered that you can do literally anything with it: any shape, any colour, any format.</p>
