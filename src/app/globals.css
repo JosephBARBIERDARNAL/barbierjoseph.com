@@ -67,10 +67,6 @@ body {
   margin-bottom: 15px;
 }
 
-
-
-
-
 .article-card {
   border-radius: 8px;
   overflow: hidden;
@@ -86,6 +82,9 @@ body {
 .article-card:hover {
   transform: translateY(-15px);
 }
+
+
+
 
 
 
