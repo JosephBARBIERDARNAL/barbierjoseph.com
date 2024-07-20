@@ -48,14 +48,47 @@ body {
   max-width: 1000px;
 }
 
-.read-button {
-  background-color: #0c0c14;
-  transition: background-color 0.2s ease;
+
+
+
+
+
+
+/* Blog posts */
+
+.blogpost h1 {
+  font-size: 50px;
+  text-align: center;
 }
 
-.read-button:hover {
-  background-color: #444464;
+.blogpost h2 {
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 15px;
 }
+
+
+
+
+
+.article-card {
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.article-card:hover {
+  transform: translateY(-15px);
+}
+
+
+
 
 .other {
   background-color: #0c0c14;

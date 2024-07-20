@@ -3,27 +3,10 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Spacing from "../components/spacing";
 import ArticleComponent from "./article";
-import Link from "next/link";
+import { articles } from "./listOfPosts";
 
-interface Article {
-  title: string;
-  description: string;
-  url: string;
-}
 
 const Blog: React.FC = () => {
-  const articles: Article[] = [
-    {
-      title: "Don't try to reverse engineer the data",
-      description: "A reflection on the importance of understanding the data before diving into analysis.",
-      url: "/blog/dont-reverse-engineer-the-data"
-    },
-    {
-      title: "My data analysis set up: IDE, tools, etc",
-      description: "All the programming tools that I use to have the smoothest workflow possible.",
-      url: "/blog/data-analysis-workflow"
-    },
-  ];
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -34,7 +17,7 @@ const Blog: React.FC = () => {
       <main className="container mx-auto flex-grow p-8 animate-fadeIn">
         <h1 className="text-4xl font-bold mb-8 text-center text-white-800">Blog</h1>
         <p>
-          I already write articles about statistics, on <a href="https://statisticaljourney.com" target="_blank">Statistical Journey</a>, but you can find here less specialized articles. Here I write more about how I understand data analysis and how we use those tools.
+          I already write articles about statistics, on <a href="https://statisticaljourney.com" target="_blank">Statistical Journey</a>, but you can find here less specialized articles. I write more about how I understand data analysis and how we use those tools.
         </p>
         <Spacing size={3}/>
         <div className="space-y-6">
