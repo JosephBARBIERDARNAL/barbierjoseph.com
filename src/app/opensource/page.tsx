@@ -9,15 +9,20 @@ const OpenSourceProject: React.FC<{ repo: Repo; isEven: boolean }> = ({ repo, is
   return (
     <div className={`flex items-start mb-16 ${isEven ? "flex-row-reverse" : "flex-row"} border-b border-gray-200 pb-8`}>
       <div className={`w-1/4 px-4 flex justify-center`}>
-        <Image 
-          src={repo.imageUrl} 
-          alt={repo.name} 
-          width={repo.imageWidth} 
-          height={repo.imageHeight} 
-          className="rounded-lg shadow-lg" 
-        />
+        <a 
+          href={repo.link} 
+          target="_blank" 
+          rel="noopener noreferrer">
+            <Image 
+            src={repo.imageUrl} 
+            alt={repo.name} 
+            width={repo.imageWidth} 
+            height={repo.imageHeight} 
+            className="rounded-lg shadow-lg" 
+          />
+        </a>
       </div>
-      <div className={`w-2/3 px-4 ${isEven ? "text-left" : "text-right"}`}>
+      <div className={`px-4 ${isEven ? "text-left" : "text-right"}`}>
         <h2 className="text-2xl font-light mb-2">{repo.name}</h2>
         <p className="mb-4 font-light">{repo.description}</p>
         <a 
