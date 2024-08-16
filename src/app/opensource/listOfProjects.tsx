@@ -10,8 +10,8 @@ export interface Repo {
 export const openSourceProjects: Repo[] = [
   {
     name: "PyPalettes",
-    description: "A Python library that provides a large number (+2500) of colour palettes for data visualisation. It is based on the Paletteer package from R and comes with a web application for browsing all the palettes.",
-    imageUrl: "/img/pypalettes.png",
+    description: "A Python library that provides a large number (+2500) of color palettes for data visualisation.",
+    imageUrl: "https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/pypalettes/image.png?raw=true",
     link: "https://github.com/JosephBARBIERDARNAL/pypalettes",
     imageWidth: 150,
     imageHeight: 100,
@@ -50,16 +50,16 @@ export const openSourceProjects: Repo[] = [
   },
   {
     name: "DrawArrow",
-    description: "A Python library that makes drawing arrows for matplotlib easy and way more intuitive.",
-    imageUrl: "/img/drawarrow.png",
+    description: "A Python library that makes drawing arrows for matplotlib easy.",
+    imageUrl: "https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/drawarrow/image.png?raw=true",
     link: "https://github.com/JosephBARBIERDARNAL/drawarrow",
     imageWidth: 150,
     imageHeight: 100,
   },
   {
     name: "PyFonts",
-    description: "A Python library that makes (down-)loading fonts in matplotlib genuinely simple.",
-    imageUrl: "/img/pyfonts.png",
+    description: "A Python library that makes loading fonts in matplotlib genuinely simple.",
+    imageUrl: "https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/pyfonts/image.png?raw=true",
     link: "https://github.com/JosephBARBIERDARNAL/pyfonts",
     imageWidth: 150,
     imageHeight: 100,
