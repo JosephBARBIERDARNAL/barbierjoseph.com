@@ -32,7 +32,7 @@ const VisualizationCard: React.FC<VisualizationCardProps> = ({ viz }) => {
       <div className="flex justify-center">
         <img
           src={viz.image}
-          alt={viz.title}
+          alt={viz.image}
           className="w-2/4 h-auto cursor-pointer transition-transform duration-500 hover:scale-105"
           onClick={() => setIsOpen(true)}
         />
@@ -42,7 +42,7 @@ const VisualizationCard: React.FC<VisualizationCardProps> = ({ viz }) => {
           <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
           <div ref={popupRef} className="flex max-w-5xl w-full relative z-10">
             <div className="w-3/4 p-4">
-              <img src={viz.gif} alt={viz.title} className="w-full h-auto object-contain max-h-[80vh]" />
+              <img src={viz.image} alt={viz.title} className="w-full h-auto object-contain max-h-[80vh]" />
             </div>
             <div className="w-1/4 bg-opacity-75 p-4 flex flex-col justify-between">
               <div>
