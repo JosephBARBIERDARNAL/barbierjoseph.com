@@ -15,31 +15,31 @@ const About: React.FC = () => {
       
       <Spacing size={3}/>
 
-      <main className="container mx-auto font-light flex-grow p-8 animate-fadeIn">
-        <h1 className="text-4xl mb-8 text-center font-bold">About Me</h1>
+      <main className="container mx-auto font-light flex-grow p-4 sm:p-6 md:p-8 animate-fadeIn">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 md:mb-8 text-center font-bold">About Me</h1>
         
-        <section className="mb-8 p-6 rounded-lg border border-gray-700 hover:border-gray-500 transition-colors duration-300">
-          <p className="mb-4">
+        <section className="mb-6 sm:mb-8 p-4 sm:p-6 rounded-lg border border-gray-700 hover:border-gray-500 transition-colors duration-300">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             My current occupations include:
           </p>
-          <ul className="list-disc list-inside mb-4 pl-4">
-            <li>Full-time intern working on open source (data visualization and software) with <Link className="linking"
+          <ul className="list-disc list-inside mb-3 sm:mb-4 pl-2 sm:pl-4 text-sm sm:text-base">
+            <li className="mb-2">Full-time intern working on open source (data visualization and software) with <Link className="linking break-words"
             href="https://www.yan-holtz.com/" target="_blank">Yan Holtz</Link></li>
-            <li>Building various <Link className="linking" href="https://github.com/JosephBARBIERDARNAL" target="_blank">open source tools</Link> related to data science</li>
-            <li>Blogging about statistics in our everyday life at <Link className="linking"
+            <li className="mb-2">Building various <Link className="linking break-words" href="https://github.com/JosephBARBIERDARNAL" target="_blank">open source tools</Link> related to data science</li>
+            <li className="mb-2">Blogging about statistics in our everyday life at <Link className="linking break-words"
             href="https://www.statisticaljourney.com/" target="_blank">statisticaljourney.com</Link></li>
           </ul>
-          <p>
-            I offer data analysis and data visualization <b>services</b>. I can help you to understand your data, create beautiful visualizations, develop web applications and more. If that"s something you"re interested in, feel free to contact me at <b>joseph.barbierdarnal@gmail.com</b>.
+          <p className="text-sm sm:text-base">
+            I offer data analysis and data visualization <b>services</b>. I can help you to understand your data, create beautiful visualizations, develop web applications and more. If that's something you're interested in, feel free to contact me at <b className="break-all">joseph.barbierdarnal@gmail.com</b>.
           </p>
         </section>
 
-        <Spacing size={5}/>
+        <Spacing size={3}/>
 
-        <section className="mb-8">
-          <h2 className="text-3xl mb-6 font-semibold text-center">Work Experience</h2>
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl md:text-3xl mb-4 sm:mb-6 font-semibold text-center">Work Experience</h2>
 
-          <Spacing size={2}/>
+          <Spacing size={1}/>
           
           {[
             {
@@ -70,12 +70,12 @@ const About: React.FC = () => {
           ].map((experience, index) => (
             <div 
               key={index}
-              className="mb-6 p-6 rounded-lg border border-gray-700 hover:border-gray-500 transition-all duration-300 cursor-pointer"
+              className="mb-4 sm:mb-6 p-4 sm:p-6 rounded-lg border border-gray-700 hover:border-gray-500 transition-all duration-300 cursor-pointer"
               onClick={() => setActiveExperience(activeExperience === index ? null : index)}
             >
-              <h3 className="text-2xl font-medium">{experience.title}</h3>
-              <p className="italic text-gray-400">{experience.period}</p>
-              <p className={`mt-2 overflow-hidden transition-all duration-300 ${activeExperience === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+              <h3 className="text-lg sm:text-xl md:text-2xl font-medium">{experience.title}</h3>
+              <p className="italic text-gray-400 text-sm sm:text-base">{experience.period}</p>
+              <p className={`mt-2 overflow-hidden transition-all duration-300 text-sm sm:text-base ${activeExperience === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
                 {experience.description}
               </p>
             </div>

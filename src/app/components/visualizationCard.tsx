@@ -27,26 +27,26 @@ const VisualizationCard: React.FC<VisualizationCardProps> = ({ viz }) => {
 
   return (
     <div className="mb-8">
-      <h2 className="flex justify-center text-2xl font-light text-white mb-2">{viz.title}</h2>
+      <h2 className="flex justify-center text-xl sm:text-2xl font-light text-white mb-2">{viz.title}</h2>
       <br/>
       <div className="flex justify-center">
         <img
           src={viz.image}
           alt={viz.image}
-          className="w-2/4 h-auto cursor-pointer transition-transform duration-500 hover:scale-105"
+          className="w-full sm:w-3/4 md:w-2/3 lg:w-2/4 h-auto cursor-pointer transition-transform duration-500 hover:scale-105"
           onClick={() => setIsOpen(true)}
         />
       </div>
       {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
+        <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
           <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
-          <div ref={popupRef} className="flex max-w-5xl w-full relative z-10">
-            <div className="w-3/4 p-4">
-              <img src={viz.image} alt={viz.title} className="w-full h-auto object-contain max-h-[80vh]" />
+          <div ref={popupRef} className="flex flex-col md:flex-row w-full max-w-5xl relative z-10 bg-gray-800 rounded-lg overflow-hidden">
+            <div className="w-full md:w-3/4 p-4">
+              <img src={viz.image} alt={viz.title} className="w-full h-auto object-contain max-h-[60vh] md:max-h-[80vh]" />
             </div>
-            <div className="w-1/4 bg-opacity-75 p-4 flex flex-col justify-between">
+            <div className="w-full md:w-1/4 bg-opacity-75 p-4 flex flex-col justify-between">
               <div>
-                <h2 className="text-2xl font-bold text-white mb-3">{viz.title}</h2>
+                <h2 className="text-xl md:text-2xl font-bold text-white mb-3">{viz.title}</h2>
                 <br/>
                 <p className="text-white mb-4 text-sm" dangerouslySetInnerHTML={{ __html: viz.description }}></p>
               </div>

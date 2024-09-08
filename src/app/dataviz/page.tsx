@@ -12,16 +12,15 @@ const DataViz: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <Spacing size={3}/>
-      <main className="container mx-auto flex-grow p-4 animate-fadeIn">
-        <h1 className="text-4xl text-white mb-8">Data Visualization & Information design</h1>
-        <div className="font-light">
-          <p>Since the summer of 2023, when I started working for the Python Graph Gallery, I've started doing a lot of visualisation, particularly with matplotlib. I've discovered that you can do literally anything with it: any shape, any colour, any format.</p>
-          <p>What's more, I love turning raw data into easy-to-understand visualisations. Whether it's for the #TidyTuesday challenge or searching through Kaggle datasets, I always find something worth spending time on.</p>
-          <br/>
-          <p>So I'm listing my favourite visualisations here, whether they're in image or video format. Don't forget to <b>click on them</b> for more information and the associated code.</p>
+      <main className="container mx-auto flex-grow px-4 sm:px-6 lg:px-8 animate-fadeIn">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl text-white mb-4 sm:mb-6 md:mb-8">Data Visualization & Information design</h1>
+        <div className="font-light text-sm sm:text-base space-y-4">
+          <p>Since summer 2023, I've been extensively working on visualization with the Python Graph Gallery, particularly using matplotlib. I've discovered its versatility in creating any shape, color, or format.</p>
+          <p>I'm passionate about transforming raw data into comprehensible visualizations, whether it's for #TidyTuesday challenges or exploring Kaggle datasets.</p>
+          <p>Below are my favorite visualizations, both images and videos. <b>Click on each</b> for more details and the associated code.</p>
         </div>
         <Spacing size={3}/>
-        <div className="space-y-12">
+        <div className="grid gap-8 sm:gap-12 md:gap-16">
           {visualizations.map((viz) => (
             <VisualizationCard key={viz.id} viz={viz} />
           ))}

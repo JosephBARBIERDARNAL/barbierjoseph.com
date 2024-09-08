@@ -1,3 +1,5 @@
+"use client"
+import React, { useState } from "react";
 import Link from "next/link";
 
 const navItems = [
@@ -8,17 +10,31 @@ const navItems = [
 ];
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="other bg-black-600 text-white pt-6 pb-6">
-      <nav className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-l z-30 font-light fixed left-0 top-0 flex w-full justify-center border-b pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Joseph - Open Source Developer & Data Analyst
+    <header className="other bg-black-600 text-white py-4">
+      <nav className="container mx-auto px-4 flex flex-wrap justify-between items-center">
+        <Link href="/" className="text-sm sm:text-base md:text-lg font-light z-30 flex items-center">
+          Joseph - Data Science Developer
         </Link>
-        <ul className="flex space-x-4">
+        
+        {/* Hamburger menu for mobile */}
+        <button 
+          className="lg:hidden mt-5"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        {/* Navigation items */}
+        <ul className={`${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} lg:max-h-96 lg:opacity-100 overflow-hidden transition-all duration-300 ease-in-out lg:flex w-full lg:w-auto mt-4 lg:mt-0 space-y-2 lg:space-y-0 lg:space-x-4`}>
           {navItems.map((item) => (
             <li key={item.text}>
               <Link href={`/${item.slug}`}>
-                <span className="px-4 [font-size:1.2rem] py-2 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:shadow-lg">
+                <span className="block px-4 py-2 text-sm md:text-base rounded-lg border border-transparent transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:shadow-lg">
                   {item.text}
                 </span>
               </Link>

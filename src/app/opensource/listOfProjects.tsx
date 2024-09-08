@@ -13,7 +13,7 @@ export const openSourceProjects: Repo[] = [
     description: "A Python library that provides a large number (+2500) of color palettes for data visualisation.",
     imageUrl: "https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/pypalettes/image.png?raw=true",
     link: "https://github.com/JosephBARBIERDARNAL/pypalettes",
-    imageWidth: 150,
+    imageWidth: 100,
     imageHeight: 100,
   },
   {
@@ -21,7 +21,7 @@ export const openSourceProjects: Repo[] = [
     description: "Website with a collection of hundreds of graphs made with Python. I'm one of the main contributors, with over a hundred pull requests merged and currently active.",
     imageUrl: "/img/pythongallery.png",
     link: "https://github.com/holtzy/The-Python-Graph-Gallery",
-    imageWidth: 150,
+    imageWidth: 100,
     imageHeight: 100,
   },
   {
@@ -29,7 +29,7 @@ export const openSourceProjects: Repo[] = [
     description: "A collection of hundreds of graphs made with R, of which I am one of the core contributors and currently active.",
     imageUrl: "/img/rgallery.png",
     link: "https://github.com/holtzy/R-Graph-Gallery",
-    imageWidth: 110,
+    imageWidth: 100,
     imageHeight: 100,
   },
   {
@@ -45,7 +45,7 @@ export const openSourceProjects: Repo[] = [
     description: "Website designed to assist in chart selection, classifying chart types based on input data format. It uses a decision tree to guide users.",
     imageUrl: "/img/datatoviz.png",
     link: "https://github.com/holtzy/data_to_viz",
-    imageWidth: 150,
+    imageWidth: 100,
     imageHeight: 100,
   },
   {
@@ -53,7 +53,7 @@ export const openSourceProjects: Repo[] = [
     description: "A Python library that makes drawing arrows for matplotlib easy.",
     imageUrl: "https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/drawarrow/image.png?raw=true",
     link: "https://github.com/JosephBARBIERDARNAL/drawarrow",
-    imageWidth: 150,
+    imageWidth: 100,
     imageHeight: 100,
   },
   {
@@ -61,7 +61,7 @@ export const openSourceProjects: Repo[] = [
     description: "A Python library that makes loading fonts in matplotlib genuinely simple.",
     imageUrl: "https://github.com/JosephBARBIERDARNAL/static/blob/main/python-libs/pyfonts/image.png?raw=true",
     link: "https://github.com/JosephBARBIERDARNAL/pyfonts",
-    imageWidth: 150,
+    imageWidth: 100,
     imageHeight: 100,
   },
 ];

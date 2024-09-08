@@ -6,10 +6,10 @@ import LinkCard from "./card";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 animate-fadeIn">
-        <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+      <main className="flex-grow flex flex-col items-center justify-between p-4 sm:p-8 md:p-16 lg:p-24 animate-fadeIn">
+        <div className="w-full max-w-5xl items-center justify-between font-mono text-sm">
         </div>
 
         <div className="relative flex place-items-center">
@@ -18,27 +18,29 @@ export default function Home() {
             alt="Joseph's Profile"
             width={200}
             height={200}
-            className="rounded-full"
+            className="rounded-full w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56"
             priority
           />
         </div>
 
         <Spacing size={1}/>
 
-        <div className="mb-32 text-center font-light max-w-2xl mx-auto">
-          <h1 className="text-2xl mb-4">Hi! I'm Joseph</h1>
-          <p className="mb-4">
+        <div className="mb-8 text-center font-light max-w-2xl mx-auto px-4">
+          <h1 className="text-xl sm:text-2xl md:text-3xl mb-4">Hi! I'm Joseph</h1>
+          <p className="mb-4 text-sm sm:text-base">
             I'm passionate about open-source development and data analysis. 
             I have worked in multiple contexts (research, start-up, freelancing, open source)
             and on various topics (health, e-commerce, ecology, data visualization).
           </p>
-          <p>
+          <p className="text-sm sm:text-base">
             Today, I'm focusing on open source projects related to data processing: visualization,
             modelling, and other tools.
           </p>
         </div>
+        <br/>
+        <br/>
 
-        <div className="grid text-center lg:mb-0 lg:w-full lg:max-w-7xl lg:grid-cols-4 lg:text-left gap-">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center lg:text-left w-full max-w-7xl px-4">
           <LinkCard
             href="/opensource"
             title="Open source"
