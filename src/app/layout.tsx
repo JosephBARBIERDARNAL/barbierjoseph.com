@@ -9,7 +9,7 @@ const myfont = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Joseph Barbier",
-  description: "Open source data analyst and developer",
+  description: "Data science developer",
 };
 
 export default function RootLayout({

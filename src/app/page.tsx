@@ -33,8 +33,7 @@ export default function Home() {
             and on various topics (health, e-commerce, ecology, data visualization).
           </p>
           <p className="text-sm sm:text-base">
-            Today, I'm focusing on open source projects related to data processing: visualization,
-            modelling, and other tools.
+            Today, I work as a freelancer on various projects and on open source projects.
           </p>
         </div>
         <br/>
@@ -54,11 +53,11 @@ export default function Home() {
           <LinkCard
             href="/blog"
             title="Blog"
-            description="Miscellaneous articles on analysis and data science that I write"
+            description="Miscellaneous articles on data science and programming"
           />
           <LinkCard
-            href="/about"
-            title="About Me"
+            href="/services"
+            title="Services"
             description="Learn more about my background, skills, and services"
           />
         </div>

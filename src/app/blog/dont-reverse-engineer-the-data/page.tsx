@@ -7,7 +7,7 @@ const DRETD: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-black-100">
       <Header />
-      <Spacing size={3}/>
+      <Spacing size={10}/>
       <main className="blogpost container mx-auto flex-grow p-">
         <h1>Don't try to reverse engineer the data</h1>
         

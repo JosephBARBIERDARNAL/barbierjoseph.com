@@ -9,8 +9,6 @@ const Blog: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      
-      <Spacing size={3}/>
 
       <main className="container mx-auto flex-grow px-4 sm:px-6 lg:px-8 py-8 animate-fadeIn">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-center text-white-800">Blog</h1>
