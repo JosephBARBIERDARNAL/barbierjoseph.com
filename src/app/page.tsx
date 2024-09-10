@@ -33,7 +33,7 @@ export default function Home() {
             and on various topics (health, e-commerce, ecology, data visualization).
           </p>
           <p className="text-sm sm:text-base">
-            Today, I work as a freelancer on various projects and on open source projects.
+            Today, I work as a freelancer on data science projects and on open source.
           </p>
         </div>
         <br/>
