@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={myfont.className}>{children}</body>
+      <body className={myfont.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
