@@ -85,7 +85,7 @@ const Services: React.FC = () => {
             >
               {copySuccess ? 'Copied!' : 'Copy'}
             </button>
-            <p className="text-xl break-all pt-2">joseph.barbierdarnal@gmail.com</p>
+            <p className="text-xl break-all">joseph.barbierdarnal@gmail.com</p>
           </div>
         </section>
 

@@ -2,7 +2,7 @@
 "use client"
 import React, { useState, useRef, useEffect } from 'react';
 import { Visualization } from '../dataviz/listOfViz';
-import Spacing from './spacing';
+import Image from 'next/image';
 
 interface VisualizationCardProps {
   viz: Visualization;
@@ -30,9 +30,11 @@ const VisualizationCard: React.FC<VisualizationCardProps> = ({ viz }) => {
       <h2 className="flex justify-center text-xl sm:text-2xl font-light text-white mb-2">{viz.title}</h2>
       <br/>
       <div className="flex justify-center">
-        <img
+        <Image
           src={viz.image}
-          alt={viz.image}
+          alt={viz.title}
+          width={500}
+          height={300}
           className="w-full sm:w-3/4 md:w-2/3 lg:w-2/4 h-auto cursor-pointer transition-transform duration-500 hover:scale-105"
           onClick={() => setIsOpen(true)}
         />
@@ -40,7 +42,7 @@ const VisualizationCard: React.FC<VisualizationCardProps> = ({ viz }) => {
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
           <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
-          <div ref={popupRef} className="flex flex-col md:flex-row w-full max-w-5xl relative z-10 bg-gray-800 rounded-lg overflow-hidden">
+          <div ref={popupRef} className="flex flex-col md:flex-row w-full max-w-5xl relative z-10 rounded-lg overflow-hidden">
             <div className="w-full md:w-3/4 p-4">
               <img src={viz.image} alt={viz.title} className="w-full h-auto object-contain max-h-[60vh] md:max-h-[80vh]" />
             </div>
@@ -64,9 +66,6 @@ const VisualizationCard: React.FC<VisualizationCardProps> = ({ viz }) => {
           </div>
         </div>
       )}
-      <Spacing size={3}/>
-      <hr/>
-      <Spacing size={1}/>
     </div>
   );
 };

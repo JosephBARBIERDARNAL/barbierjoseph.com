@@ -17,7 +17,7 @@ export const visualizations: Visualization[] = [
   {
     id: '2',
     title: 'Trends in unemployment rates',
-    description: 'This is a description of the second data visualization.',
+    description: 'During COVID-19, countries experienced significantly different economic responses. One of the most interesting differences is that some countries saw drastic changes in unemployment rates, while others remained very stable.<br/><br/>This chart highlights this particular phenomenon across major countries/regions.',
     url: 'https://python-graph-gallery.com/web-small-multiple-with-highlights/',
     image: '/img/viz/unemployment_linecharts.png',
   },
@@ -38,8 +38,8 @@ export const visualizations: Visualization[] = [
   {
     id: '7',
     title: 'ChatGPT and fake news detection',
-    description: '',
-    url: './',
+    description: "I'm very curious about how large language models (LLMs) handle 'truth'. Using a simple fake news detection dataset and the OpenAI API, I asked ChatGPT to determine whether each news item was true or fake, and then compared the results to the actual values.<br/><br/>The main concern is that ChatGPT (3.5) is not very effective at classifying news, and most people should avoid using it for this purpose.",
+    url: 'https://github.com/JosephBARBIERDARNAL/misc-dataviz/tree/main/fake-news',
     image: '/img/viz/fake-news-chatgpt.png',
   },
   {
