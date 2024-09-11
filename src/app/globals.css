@@ -26,15 +26,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.linking {
-  color: rgb(247, 165, 57);
-  transition: color 0.2s ease;
-}
-
-.linking:hover {
-  color: rgb(254, 200, 129);
-}
-
 .code-btn {
   background-color: rgb(179, 118, 39);
 }
@@ -58,13 +49,21 @@ body {
 
 .blogpost h1 {
   font-size: 50px;
+  font-weight: 300;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .blogpost h2 {
   font-size: 30px;
+  font-weight: 200;
   margin-top: 100px;
   margin-bottom: 15px;
+}
+
+.blogpost p {
+  font-weight: 100;
+  margin-bottom: 8px;
 }
 
 .article-card {
@@ -87,10 +86,12 @@ body {
 
 
 
-
-
-.other {
-  background-color: #0c0c14;
+.clickable {
+  color: #60a5fa;
+}
+.clickable:hover {
+  color: #93c5fd;
+  transition: color 0.3s;
 }
 
 p, li {font-size: 20px;}

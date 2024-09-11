@@ -56,7 +56,7 @@ const ServicesFrench: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-black to-gray-800 text-white">
       <Header />
 
       <div className="container mx-auto px-4 py-4">

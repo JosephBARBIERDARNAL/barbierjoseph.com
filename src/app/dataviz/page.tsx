@@ -17,7 +17,7 @@ const DataViz: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-black">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-800 to-black">
       <Header />
       <Spacing size={3}/>
       <main className="container mx-auto flex-grow px-4 sm:px-6 lg:px-8 animate-fadeIn">
@@ -35,11 +35,14 @@ const DataViz: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          <p>I've been extensively working on visualization with the Python Graph Gallery, particularly using matplotlib. I've discovered its versatility in creating any shape, color, or format.</p>
+          <p>
+            I've been extensively working on visualization with the <a href="https://python-graph-gallery.com/" target="_blank" rel="noopener noreferrer" className="clickable">Python Graph Gallery</a>, particularly using matplotlib.
+          </p>
           <br/>
-          <p>I'm passionate about transforming raw data into comprehensible visualizations, whether it's for #TidyTuesday challenges or exploring Kaggle datasets.</p>
+          <p>
+            I'm passionate about transforming raw data into comprehensible visualizations, and below are my favorite visualizations, both images and videos. <b>Click on each</b> for more details and the associated code.
+          </p>
           <br/>
-          <p>Below are my favorite visualizations, both images and videos. <b>Click on each</b> for more details and the associated code.</p>
         </motion.div>
         <Spacing size={5}/>
         <div className="space-y-24 sm:space-y-32 md:space-y-40">

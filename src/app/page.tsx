@@ -6,7 +6,7 @@ import LinkCard from "./card";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-800 to-black">
       <Header />
       <main className="flex-grow flex flex-col items-center justify-between p-4 sm:p-8 md:p-16 lg:p-24 animate-fadeIn">
         <div className="w-full max-w-5xl items-center justify-between font-mono text-sm">
@@ -62,6 +62,7 @@ export default function Home() {
           />
         </div>
       </main>
+      <Spacing size={1}/>
       <Footer/>
     </div>
   );

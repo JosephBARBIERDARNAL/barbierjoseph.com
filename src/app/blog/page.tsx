@@ -63,7 +63,7 @@ const Blog: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          I already write articles about statistics on <a href="https://statisticaljourney.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-300">Statistical Journey</a>, but you can find here less specialized articles. I write more about how I understand data analysis and how we use those tools.
+          I already write articles about statistics on <a href="https://statisticaljourney.com" target="_blank" rel="noopener noreferrer" className="clickable">Statistical Journey</a>, but you can find here less specialized articles. I write more about how I understand data analysis and how we use those tools.
         </motion.p>
         <Spacing size={5}/>
         <motion.div 

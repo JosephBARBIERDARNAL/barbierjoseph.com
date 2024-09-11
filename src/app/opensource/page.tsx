@@ -30,7 +30,7 @@ const OpenSourceProject: React.FC<{ repo: Repo; isEven: boolean }> = ({ repo, is
             width={repo.imageWidth} 
             height={repo.imageHeight} 
             className="rounded-lg shadow-lg"
-            style={{ minWidth: '200px', width: '100%', height: 'auto' }}
+            style={{ minWidth: '100px', width: '100%', height: 'auto' }}
           />
         </motion.a>
       </div>
@@ -63,7 +63,7 @@ const OpenSource: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-800 to-black text-white">
       <Header />
 
       <Spacing size={3} />
