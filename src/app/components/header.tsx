@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import Spacing from "./spacing";
@@ -15,23 +15,31 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
+      const headerHeight = headerRef.current?.offsetHeight || 0;
+
+      if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
         setIsVisible(false);
-      } else {
+      } else if (currentScrollY < lastScrollY) {
         setIsVisible(true);
       }
+
+      // Adjust scroll position when header reappears at the top
+      if (currentScrollY < headerHeight && !isVisible) {
+        window.scrollTo(0, 0);
+      }
+
       setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
-
+  }, [lastScrollY, isVisible]);
   return (
     <>
       <Head>
@@ -64,7 +72,7 @@ const Header: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header
-        className={`other text-white py-4 fixed top-0 left-0 right-0 transition-transform duration-300 z-50 ${
+        className={`other text-white bg-gray-800 py-4 fixed top-0 left-0 right-0 transition-transform duration-300 z-50 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >

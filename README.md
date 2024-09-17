@@ -1,2 +1,1 @@
-
-my personal website: [barbierjoseph.com](https://barbierjoseph.com)
+> my personal website: [barbierjoseph.com](https://barbierjoseph.com)

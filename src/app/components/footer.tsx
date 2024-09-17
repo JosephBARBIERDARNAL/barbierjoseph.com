@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="other text-white p-6 mt-8">
       {/* <h1 className="text-center text-base pb-5">CONTACT</h1> */}
       <div className="container mx-auto flex flex-col items-center">
-        <p className="font-thin">Joseph Barbier</p>
+        <p className="font-thin">Copyright © Joseph Barbier 2024</p>
         <br />
 
         <div className="flex space-x-6 mb-4">

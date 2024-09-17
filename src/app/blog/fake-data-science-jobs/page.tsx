@@ -81,62 +81,82 @@ const FDSJ: React.FC = () => {
           meaning I'm probably not the only one in this case.
         </p>
 
-        <h2>Other Job Offers</h2>
-        <p>
-          Let's have a look at different job offers, but from other companies to
-          highlight the nonsense.
-        </p>
-        <div className="flex my-10 space-x-4 items-center">
-          <Image
-            src="/img/blog/example-fake-datascience-job-2.png"
-            width={300}
-            height={100}
-            alt="example of a fake data science job 2"
-            className="rounded-lg"
-          />
-          <p>
-            Here we have an offer that has a ridiculous pay rate, a very
-            suspicious required experience, and a weird location requirement
-            (probably working solo on data labeling tasks with zero meetings).
+        <section className="max-w-4xl mx-auto px-4 py-8">
+          <h2 className="text-2xl font-bold mb-4">Other Job Offers</h2>
+          <p className="mb-6">
+            Let's have a look at different job offers, but from other companies
+            to highlight the nonsense.
           </p>
-        </div>
-        <div className="flex my-10 space-x-4 items-center">
-          <p>
-            This other offer literally doesn't ask for any experience, nor any
-            programming/data skills. When we look at the description, this has
-            nothing to do with data analysis, and they have very weird
-            requirements such as living in France for at least 5 years.
-          </p>
-          <p>
-            Their benefits only focus on the "flexibility" of the job (once
-            again: solo work on data annotation with no meetings).
-          </p>
-          <Image
-            src="/img/blog/example-fake-datascience-job-3.png"
-            width={300}
-            height={100}
-            alt="example of a fake data science job 3"
-            className="rounded-lg"
-          />
-        </div>
-        <div className="flex my-10 space-x-4 items-center">
-          <Image
-            src="/img/blog/example-fake-datascience-job-4.png"
-            width={300}
-            height={100}
-            alt="example of a fake data science job 4"
-            className="rounded-lg"
-          />
-          <p>
-            On this other job offer from another company, we find a similar
-            pattern with very specific requirements and no mention of data
-            analysis whatsoever.
-          </p>
-          <p>
-            Interestingly, they mention "extra income" for their remuneration,
-            as if this was not even a real job but just a side thing to do.
-          </p>
-        </div>
+
+          <div className="space-y-10">
+            <div className="flex flex-col md:flex-row md:space-x-4 items-center">
+              <div className="w-full md:w-1/3 mb-4 md:mb-0">
+                <Image
+                  src="/img/blog/example-fake-datascience-job-2.png"
+                  width={300}
+                  height={100}
+                  alt="example of a fake data science job 2"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+              <p className="w-full md:w-2/3">
+                Here we have an offer that has a ridiculous pay rate, a very
+                suspicious required experience, and a weird location requirement
+                (probably working solo on data labeling tasks with zero
+                meetings).
+              </p>
+            </div>
+
+            <div className="flex flex-col-reverse md:flex-row md:space-x-4 items-center">
+              <div className="w-full md:w-2/3 space-y-4">
+                <p>
+                  This other offer literally doesn't ask for any experience, nor
+                  any programming/data skills. When we look at the description,
+                  this has nothing to do with data analysis, and they have very
+                  weird requirements such as living in France for at least 5
+                  years.
+                </p>
+                <p>
+                  Their benefits only focus on the "flexibility" of the job
+                  (once again: solo work on data annotation with no meetings).
+                </p>
+              </div>
+              <div className="w-full md:w-1/3 mb-4 md:mb-0">
+                <Image
+                  src="/img/blog/example-fake-datascience-job-3.png"
+                  width={300}
+                  height={100}
+                  alt="example of a fake data science job 3"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row md:space-x-4 items-center">
+              <div className="w-full md:w-1/3 mb-4 md:mb-0">
+                <Image
+                  src="/img/blog/example-fake-datascience-job-4.png"
+                  width={300}
+                  height={100}
+                  alt="example of a fake data science job 4"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+              <div className="w-full md:w-2/3 space-y-4">
+                <p>
+                  On this other job offer from another company, we find a
+                  similar pattern with very specific requirements and no mention
+                  of data analysis whatsoever.
+                </p>
+                <p>
+                  Interestingly, they mention "extra income" for their
+                  remuneration, as if this was not even a real job but just a
+                  side thing to do.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <h2>The Actual Job</h2>
         <p>
