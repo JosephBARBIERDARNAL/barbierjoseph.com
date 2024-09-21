@@ -67,6 +67,13 @@ body {
   margin-bottom: 15px;
 }
 
+.blogpost h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
 .blogpost p {
   font-weight: 100;
   margin-bottom: 8px;
