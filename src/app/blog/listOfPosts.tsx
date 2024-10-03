@@ -48,4 +48,18 @@ export const articles: Article[] = [
     description: "The problem of large language models (LLMs).",
     url: "/blog/chatgpt-metric-is-not-truthfulness",
   },
+  {
+    title: "Does chatGPT regret what it says?",
+    tags: ["chatgpt", "llm", "temperature"],
+    description:
+      "Because of the way language models are built, they may not regret what they have said, even though they should.",
+    url: "/blog/does-chatpt-regret-what-it-says",
+  },
+  {
+    title: "It's not even correlation",
+    tags: ["bias", "statistics", "measure"],
+    description:
+      "We often confuse correlation with causality and overlook the role of chance. To understand success or groups, focus on differences and missing information, not just similarities.",
+    url: "/blog/its-not-even-correlation",
+  },
 ];

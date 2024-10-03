@@ -74,7 +74,7 @@ body {
   margin-bottom: 15px;
 }
 
-.blogpost p {
+.blogpost p, li {
   font-weight: 100;
   margin-bottom: 8px;
 }

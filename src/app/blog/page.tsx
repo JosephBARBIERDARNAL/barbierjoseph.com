@@ -1,12 +1,14 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Spacing from "../components/spacing";
-import ArticleComponent from "./article";
+import ArticleComponent from "./blogPostCard";
 import { articles } from "./listOfPosts";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+
+const numberOfPosts = articles.length;
 
 const Blog: React.FC = () => {
   const controls = useAnimation();
@@ -49,7 +51,7 @@ const Blog: React.FC = () => {
       <Header />
 
       <main className="container mx-auto flex-grow px-4 sm:px-6 lg:px-8 py-8 animate-fadeIn">
-        <motion.h1 
+        <motion.h1
           className="text-3xl sm:text-4xl md:text-5xl font-light mb-6 sm:mb-8 md:mb-10 text-center bg-clip-text"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,16 +59,20 @@ const Blog: React.FC = () => {
         >
           Blog
         </motion.h1>
-        <motion.p 
+        <motion.p
           className="text-sm sm:text-base md:text-lg text-center max-w-2xl mx-auto text-gray-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          I already write articles about statistics on <a href="https://statisticaljourney.com" target="_blank" rel="noopener noreferrer" className="clickable">Statistical Journey</a>, but you can find here less specialized articles. I write more about how I understand data analysis and how we use those tools.
+          I write <b>non-technical blog posts</b> about data science,
+          technology, statistics and more generally about how I understand data
+          analysis and how we use technical tools. At the moment, there are{" "}
+          <b>{articles.length} blog posts</b>.
         </motion.p>
-        <Spacing size={5}/>
-        <motion.div 
+        <motion.p></motion.p>
+        <Spacing size={5} />
+        <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"

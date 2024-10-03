@@ -9,8 +9,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-gray-800 to-black">
       <Header />
       <main className="flex-grow flex flex-col items-center justify-between p-4 sm:p-8 md:p-16 lg:p-24 animate-fadeIn">
-        <div className="w-full max-w-5xl items-center justify-between font-mono text-sm">
-        </div>
+        <div className="w-full max-w-5xl items-center justify-between font-mono text-sm"></div>
 
         <div className="relative flex place-items-center">
           <Image
@@ -23,21 +22,25 @@ export default function Home() {
           />
         </div>
 
-        <Spacing size={1}/>
+        <Spacing size={1} />
 
         <div className="mb-8 text-center font-light max-w-2xl mx-auto px-4">
-          <h1 className="text-xl sm:text-2xl md:text-3xl mb-4">Hi! I'm Joseph</h1>
+          <h1 className="text-xl sm:text-2xl md:text-3xl mb-4">
+            Hi! I'm Joseph
+          </h1>
           <p className="mb-4 text-sm sm:text-base">
-            I'm passionate about open-source development and data analysis. 
-            I have worked in multiple contexts (research, start-up, freelancing, open source)
-            and on various topics (health, e-commerce, ecology, data visualization).
+            I'm passionate about open-source development and data analysis. I
+            have worked in multiple contexts (research, start-up, freelancing,
+            open source) and on various topics (health, e-commerce, ecology,
+            data visualization).
           </p>
           <p className="text-sm sm:text-base">
-            Today, I work as a freelancer on data science projects and on open source.
+            Today, I live in France, working as a freelance data scientist and
+            dedicating time to open-source projects
           </p>
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center lg:text-left w-full max-w-7xl px-4">
           <LinkCard
@@ -62,8 +65,8 @@ export default function Home() {
           />
         </div>
       </main>
-      <Spacing size={1}/>
-      <Footer/>
+      <Spacing size={1} />
+      <Footer />
     </div>
   );
 }
