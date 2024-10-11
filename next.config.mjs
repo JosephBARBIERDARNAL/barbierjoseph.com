@@ -4,16 +4,16 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'github.com',
-        pathname: '/JosephBARBIERDARNAL/static/**',
+        protocol: "https",
+        hostname: "github.com",
+        pathname: "/JosephBARBIERDARNAL/static/**",
       },
     ],
   },
   i18n: {
-    locales: ['en', 'fr'],
-    defaultLocale: 'en',  
+    locales: ["en"],
+    defaultLocale: "en",
   },
-}
+};
 
 export default nextConfig;
