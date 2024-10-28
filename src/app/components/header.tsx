@@ -43,10 +43,10 @@ const Header: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Joseph Barbier - Data Science Developer</title>
+        <title>Joseph Barbier</title>
         <meta
           name="description"
-          content="Portfolio of Joseph Barbier, a Data Science Developer specializing in open-source development, data analysis, and visualization."
+          content="Portfolio of Joseph Barbier, a data scientist specializing in open-source development, data analysis, and visualization."
         />
         <meta
           name="keywords"
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
             href="/"
             className="text-sm sm:text-base md:text-lg font-light z-30 flex items-center"
           >
-            Joseph - Data Science Developer
+            Joseph - Freelance data scientist
           </Link>
 
           {/* Hamburger menu for mobile */}
