@@ -7,6 +7,12 @@ import { visualizations } from "./listOfViz";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
+interface Visualization {
+  id: string;
+  image: string;
+  title: string;
+}
+
 interface ImagePopupProps {
   image: string;
   title: string;
@@ -43,7 +49,9 @@ const ImagePopup: React.FC<ImagePopupProps> = ({ image, title, onClose }) => {
 
 const DataViz: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<Visualization | null>(
+    null
+  );
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -178,8 +186,8 @@ const DataViz: React.FC = () => {
       <AnimatePresence>
         {selectedImage && (
           <ImagePopup
-            image={selectedImage["image"]}
-            title={selectedImage["title"]}
+            image={selectedImage.image}
+            title={selectedImage.title}
             onClose={handleClose}
           />
         )}
