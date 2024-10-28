@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Spacing from "../components/spacing";
@@ -7,7 +7,13 @@ import { visualizations } from "./listOfViz";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const ImagePopup = ({ image, title, onClose }) => {
+interface ImagePopupProps {
+  image: string;
+  title: string;
+  onClose: () => void;
+}
+
+const ImagePopup: React.FC<ImagePopupProps> = ({ image, title, onClose }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -21,7 +27,6 @@ const ImagePopup = ({ image, title, onClose }) => {
         animate={{ scale: 1 }}
         exit={{ scale: 0.5 }}
         className="relative w-[90vw] h-[90vh] rounded-lg overflow-hidden"
-        onClick={(e) => e.stopPropagation()}
       >
         <Image
           src={image}
@@ -31,25 +36,6 @@ const ImagePopup = ({ image, title, onClose }) => {
           className="object-contain"
           sizes="90vw"
         />
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/70 transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
       </motion.div>
     </motion.div>
   );
@@ -63,6 +49,10 @@ const DataViz: React.FC = () => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleClose = useCallback(() => {
+    setSelectedImage(null);
   }, []);
 
   useEffect(() => {
@@ -149,6 +139,8 @@ const DataViz: React.FC = () => {
           </li>
         </motion.div>
 
+        <Spacing size={3} />
+
         <motion.div
           variants={container}
           initial="hidden"
@@ -186,9 +178,9 @@ const DataViz: React.FC = () => {
       <AnimatePresence>
         {selectedImage && (
           <ImagePopup
-            image={selectedImage.image}
-            title={selectedImage.title}
-            onClose={() => setSelectedImage(null)}
+            image={selectedImage["image"]}
+            title={selectedImage["title"]}
+            onClose={handleClose}
           />
         )}
       </AnimatePresence>
