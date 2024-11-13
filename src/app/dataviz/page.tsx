@@ -180,6 +180,26 @@ const DataViz: React.FC = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        <br />
+        <br />
+
+        <center>
+          <h1>For fun, give the globe a spin!</h1>
+          <br />
+          <iframe
+            src="/img/a_new_tool.html"
+            width={800}
+            height={800}
+            style={{
+              borderRadius: "100px", // Adjust this value as needed for more rounding
+              overflow: "hidden", // Hides any content that may spill outside the border
+            }}
+          />
+        </center>
+
+        <br />
+        <br />
       </main>
       <Footer />
 

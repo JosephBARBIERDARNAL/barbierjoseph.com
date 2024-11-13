@@ -39,6 +39,7 @@ export default function Home() {
             dedicating time to open-source projects
           </p>
         </div>
+
         <br />
         <br />
 

@@ -148,7 +148,7 @@ const Services: React.FC = () => {
 
           {[
             {
-              title: "Data science developer - Freelance",
+              title: "Data sciencist - Freelance",
               period: "Sep 2024 - Present",
               description:
                 "I offer data science services: from data cleaning to data visualization, making predictive models and building web apps. Feel free to contact me if you're interested.",
