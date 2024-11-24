@@ -36,9 +36,19 @@ export const visualizations: Visualization[] = [
     image: "/img/viz/compressed_temperature.jpg",
   },
   {
-    id: "16",
-    title: "The conquest of space",
-    image: "/img/viz/outer-space.gif",
+    id: "17",
+    title: "A raster map with 4 different palettes",
+    image: "/img/viz/raster-4colors.png",
+  },
+  {
+    id: "18",
+    title: "Bordeaux in a vintage style",
+    image: "/img/viz/bordeaux-vintage.png",
+  },
+  {
+    id: "19",
+    title: "2 US maps with different granularity levels",
+    image: "/img/viz/double-us.png",
   },
   {
     id: "9",
