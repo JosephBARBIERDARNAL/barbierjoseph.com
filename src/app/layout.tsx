@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
 
-const myfont = Open_Sans({ 
+const myfont = Open_Sans({
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Joseph Barbier",
-  description: "Data science developer",
+  description: "Data science",
 };
 
 export default function RootLayout({

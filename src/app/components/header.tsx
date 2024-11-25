@@ -56,11 +56,11 @@ const Header: React.FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:title"
-          content="Joseph Barbier - Data Science Developer"
+          content="Joseph Barbier - Freelance data scientist"
         />
         <meta
           property="og:description"
-          content="Portfolio of Joseph Barbier, a Data Science Developer specializing in open-source development, data analysis, and visualization."
+          content="Portfolio of Joseph Barbier, a freelance data scientist specializing in open-source development, data analysis, and visualization."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://barbierjoseph.com" />
