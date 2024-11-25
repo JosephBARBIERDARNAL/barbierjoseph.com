@@ -105,6 +105,13 @@ const TRFOP: React.FC = () => {
           Given the small size of the project, having two sources of truth isn’t
           a significant issue.
         </p>
+        <p className="text-gray-300 italic text-sm">
+          Note: I still wrote all the docstrings for two main reasons. First, to
+          assist my future self (or any other developer) when revisiting the
+          code. Second, many IDEs display a function’s docstring when you hover
+          over it, making it a quick and convenient way to access its
+          documentation.
+        </p>
 
         <h2>The Color Palette Finder</h2>
         <p>
