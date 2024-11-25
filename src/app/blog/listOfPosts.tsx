@@ -7,6 +7,13 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    title: "3 repos for a single package: why?",
+    tags: ["python", "package", "UX"],
+    description:
+      "My python package pypalettes has 3 repos for only around 500 lines of code. Why did I do that?",
+    url: "/blog/three-repos-for-one-package",
+  },
+  {
     title: "Fake data science jobs",
     tags: ["job", "data annotation", "AI training"],
     description:
