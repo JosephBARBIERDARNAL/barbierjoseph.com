@@ -1,0 +1,49 @@
+site_name: Joseph Barbier
+site_url: hhtps://www.barbierjoseph.com
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.instant.progress
+
+nav:
+  - Home: index.md
+  - Visualization: visualization.md
+  - Work: work.md
+  - Blog:
+    - blog/3-repos-1-package-why.md
+    - blog/fake-data-science-jobs.md
+    - blog/its-not-even-correlation.md
+    - blog/does-chatGPT-regret-what-it-says.md
+    - blog/chatGPT-metric-is-not-truthfulness.md
+    - blog/statistics-in-our-daily-life.md
+    - blog/dont-try-to-reverse-engineer-the-data.md
+
+
+extra_css:
+  - stylesheets/style.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+
+extra:
+  analytics:
+    provider: google
+    property: G-44BHVZD8BN
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

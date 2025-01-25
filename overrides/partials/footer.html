@@ -1,0 +1,89 @@
+<!-- Footer Section -->
+<div class="footer-icons">
+  <a
+    href="https://github.com/JosephBARBIERDARNAL"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="icon-link github"
+    aria-label="GitHub"
+  >
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a
+    href="https://x.com/joseph_barbier"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="icon-link twitter"
+    aria-label="Twitter"
+  >
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/joseph-barbier-4ab531224/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="icon-link linkedin"
+    aria-label="LinkedIn"
+  >
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a
+    href="mailto:joseph.barbierdarnal@gmail.com"
+    class="icon-link email"
+    aria-label="Email"
+  >
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+<!-- Embedded CSS for Hover Effects -->
+<style>
+  /* Container Styling */
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0 50px 0;
+  }
+
+  /* Common Link Styling */
+  .icon-link {
+    font-size: 3.5em;
+    color: #000; /* Set default color to black */
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Remove individual color assignments from default state */
+  /* Individual Icon Colors on Hover */
+  .github:hover {
+    color: #333; /* Original GitHub Color (adjust if needed) */
+  }
+
+  .twitter:hover {
+    color: #1da1f2; /* Twitter Original Color */
+  }
+
+  .linkedin:hover {
+    color: #0077b5; /* LinkedIn Original Color */
+  }
+
+  .email:hover {
+    color: #d44638; /* Email Original Color */
+  }
+
+  /* Hover Effects */
+  .icon-link:hover {
+    transform: scale(1.2);
+  }
+
+  /* Optional: Remove focus outline for better aesthetics */
+  .icon-link:focus {
+    outline: none;
+  }
+</style>
