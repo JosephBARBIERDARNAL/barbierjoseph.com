@@ -49,6 +49,14 @@ function copyEmail() {
 }
 </script>
 
+## Matplotlib
+
+I’ve spent hundreds of hours <a href="/visualization">creating charts with Matplotlib</a>—from maps to animations, and even building third-party extensions for Matplotlib.
+
+Since I believe it’s one of the most powerful data visualization tools out there, I co-created an **online course** called **<a href="https://www.matplotlib-journey.com/" target="_blank">Matplotlib Journey</a>**. The course takes you from zero to hero in Matplotlib and also covers best practices in data visualization, enabling anyone to create any type of chart they can imagine.
+
+> We offer discounts for students, low-income countries and groups (n>=3)!
+
 ## Open source
 
 I contribute to and maintain various packages, primarily in the **Python dataviz world**. My goal is to simplify data science tasks without compromising on extensive customization capabilities.
@@ -56,18 +64,18 @@ I contribute to and maintain various packages, primarily in the **Python dataviz
 - [pypalettes](https://github.com/JosephBARBIERDARNAL/pypalettes){:target="\_blank"}: a comprehensive collection of colormaps for Python
 - [pyfonts](https://github.com/JosephBARBIERDARNAL/pyfonts){:target="\_blank"}: working with fonts in Matplotlib, enhancing ease and reproducibility
 - [drawarrow](https://github.com/JosephBARBIERDARNAL/drawarrow){:target="\_blank"}: simplifies the process of customizing arrows in Matplotlib
+- [morethemes](https://github.com/JosephBARBIERDARNAL/morethemes){:target="\_blank"}: themes for Matplotlib
+- [dayplot](https://github.com/JosephBARBIERDARNAL/dayplot){:target="\_blank"}: calendar heatmaps in Matplotlib
 - [gifing](https://github.com/JosephBARBIERDARNAL/gifing){:target="\_blank"}: makes creating GIFs straightforward and effortless.
-
-Additionally, I actively contribute to the broader Python ecosystem. Recently, I've started contributing to **scikit-learn** and various other smaller packages.
 
 ## I work with them!
 
 <div class="testimonials">
 
   <div class="testimonial">
-    <img src="../img/yan.png" alt="Yan Holtz">
+    <a href="https://www.yan-holtz.com/" target="_blank"><img src="../img/yan.png" alt="Yan Holtz"></a>
     <div class="testimonial-content">
-      <div class="testimonial-name">Yan Holtz</div>
+      <a href="https://www.yan-holtz.com/" target="_blank"><div class="testimonial-name">Yan Holtz</div></a>
       <div class="testimonial-job">Software Engineer - Independent</div>
       <p>
         I hired Joseph for a six-month internship, during which he contributed
@@ -87,9 +95,9 @@ Additionally, I actively contribute to the broader Python ecosystem. Recently, I
   </div>
 
   <div class="testimonial">
-    <img src="../img/nicolas.jpg" alt="Nicolas Rode">
+    <a href="https://scholar.google.fr/citations?user=K8-EhrwAAAAJ&hl=fr" target="_blank"><img src="../img/nicolas.jpg" alt="Nicolas Rode"></a>
     <div class="testimonial-content">
-      <div class="testimonial-name">Nicolas Rode</div>
+      <a href="https://scholar.google.fr/citations?user=K8-EhrwAAAAJ&hl=fr" target="_blank"><div class="testimonial-name">Nicolas Rode</div></a>
       <div class="testimonial-job">Researcher - INRAE</div>
       <p>
         Joseph did a wonderful job at turning our messy scripts into a
@@ -105,9 +113,9 @@ Additionally, I actively contribute to the broader Python ecosystem. Recently, I
   </div>
 
   <div class="testimonial">
-    <img src="../img/thomas.png" alt="Thomas Salanova">
+    <a href="https://www.linkedin.com/in/thomas-salanova/" target="_blank"><img src="../img/thomas.png" alt="Thomas Salanova"></a>
     <div class="testimonial-content">
-      <div class="testimonial-name">Thomas Salanova</div>
+      <a href="https://www.linkedin.com/in/thomas-salanova/" target="_blank"><div class="testimonial-name">Thomas Salanova</div></a>
       <div class="testimonial-job">Researcher and Psychologist - Bordeaux Métropole</div>
       <p>
          As well as his technical skills, Joseph has excellent
