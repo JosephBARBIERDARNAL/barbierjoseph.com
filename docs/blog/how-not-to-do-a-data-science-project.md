@@ -2,7 +2,7 @@
 
 <div class="read-time">
 
-Estimated read time: 3 min
+Estimated read time: 5 min
 
 </div>
 
