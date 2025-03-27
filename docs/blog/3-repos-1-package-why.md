@@ -62,4 +62,4 @@ The fact that it's open source shouldn't mean that only nerds will be able to un
 
 Having a different opinion? A nuance to bring? A question to ask? Please share it!
 
-I'm always looking for feedback. The best way to share your thoughts is to open an issue on the GitHub repository of the site.
+I'm always looking for feedback. The best way to share your thoughts is to open an issue on the [GitHub repository](https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/issues) of the site.

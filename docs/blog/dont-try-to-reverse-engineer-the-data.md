@@ -45,4 +45,4 @@ Here I define some pre-requisites that I think are necessary to be able to analy
 
 Having a different opinion? A nuance to bring? A question to ask? Please share it!
 
-I'm always looking for feedback. The best way to share your thoughts is to open an issue on the GitHub repository of the site.
+I'm always looking for feedback. The best way to share your thoughts is to open an issue on the [GitHub repository](https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/issues) of the site.

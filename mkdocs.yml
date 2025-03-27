@@ -13,14 +13,14 @@ nav:
   - Visualization: visualization.md
   - Work: work.md
   - Blog:
-    - blog/3-repos-1-package-why.md
-    - blog/fake-data-science-jobs.md
-    - blog/its-not-even-correlation.md
-    - blog/does-chatGPT-regret-what-it-says.md
-    - blog/chatGPT-metric-is-not-truthfulness.md
-    - blog/statistics-in-our-daily-life.md
-    - blog/dont-try-to-reverse-engineer-the-data.md
-
+      - blog/how-not-to-do-a-data-science-project.md
+      - blog/3-repos-1-package-why.md
+      - blog/fake-data-science-jobs.md
+      - blog/its-not-even-correlation.md
+      - blog/does-chatGPT-regret-what-it-says.md
+      - blog/chatGPT-metric-is-not-truthfulness.md
+      - blog/statistics-in-our-daily-life.md
+      - blog/dont-try-to-reverse-engineer-the-data.md
 
 extra_css:
   - stylesheets/style.css
