@@ -16,7 +16,7 @@ If you work in a field related to data science/analysis, you might have encounte
 
 Let's see what these job offers look like:
 
-<center><img src="/img/example-fake-datascience-job-1.webp" alt="message from a company saying they want to hire me" style="border: 1px solid #ccc;"></center>
+<center><img src="https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/blob/main/docs/img/example-fake-datascience-job-1.webp?raw=true" alt="message from a company saying they want to hire me" style="border: 1px solid #ccc;"></center>
 
 Interesting things to note:
 
@@ -29,7 +29,7 @@ Interesting things to note:
 
 Since I was very curious, I applied to the job offer to understand more about it. I then filled in the basic info they asked for. And then, for some reason, they really wanted me to work with them:
 
-<center>![](../img/turing-messages.gif)</center>
+<center>![](https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/blob/main/docs/img/turing-messages.gif?raw=true)</center>
 
 They kept saying in their messages that I only had a few days to do their tests, and otherwise I would be removed from the recruiting process. What's even more interesting is that they didn't know much about my skills, but they still sent lots of automatic messages, meaning I'm probably not the only one in this case.
 
@@ -38,7 +38,7 @@ They kept saying in their messages that I only had a few days to do their tests,
 Let's have a look at different job offers, but from other companies to highlight the nonsense.
 
 <div style="display: flex; align-items: center;">
-   <img src="/img/example-fake-datascience-job-2.webp" alt="fake data science job description" style="border: 1px solid #ccc; margin-right: 10px;">
+   <img src="https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/blob/main/docs/img/example-fake-datascience-job-2.webp?raw=true" alt="fake data science job description" style="border: 1px solid #ccc; margin-right: 10px;">
       
       Here we have an offer that has a ridiculous pay rate, a very suspicious required experience, and a weird location requirement (probably working solo on data labeling tasks with zero meetings).
 </div>
@@ -48,13 +48,13 @@ Let's have a look at different job offers, but from other companies to highlight
 <div style="display: flex; align-items: center;">
         This other offer literally doesn't ask for any experience, nor any programming/data skills. When we look at the description, this has nothing to do with data analysis, and they have very weird requirements such as living in France for at least 5 years. Their benefits only focus on the "flexibility" of the job (once again: solo work on data annotation with no meetings).
     
-   <img src="/img/example-fake-datascience-job-3.webp" alt="fake data science job description" style="border: 1px solid #ccc; margin-left: 10px;">
+   <img src="https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/blob/main/docs/img/example-fake-datascience-job-3.webp?raw=true" alt="fake data science job description" style="border: 1px solid #ccc; margin-left: 10px;">
 </div>
 
 <br/>
 
 <div style="display: flex; align-items: center;">
-   <img src="/img/example-fake-datascience-job-4.webp" alt="fake data science job description" style="border: 1px solid #ccc; margin-right: 10px;">
+   <img src="https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/blob/main/docs/img/example-fake-datascience-job-4.webp?raw=true" alt="fake data science job description" style="border: 1px solid #ccc; margin-right: 10px;">
       
       On this other job offer from another company, we find a similar pattern with very specific requirements and no mention of data analysis whatsoever. Interestingly, they mention "extra income" for their remuneration, as if this was not even a real job but just a side thing to do.
 </div>
@@ -71,7 +71,7 @@ The code they are talking about was related to data science, but was so vast it 
 
 There is lots of text to read (assignment + compare 2 LLMs output on long tasks), with very specific questions such as:
 
-<center><img src="/img/llm-ranking.webp" alt="task of ranking llm models based on output", style="border: 1px solid #ccc;"></center>
+<center><img src="https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/blob/main/docs/img/llm-ranking.webp?raw=true" alt="task of ranking llm models based on output", style="border: 1px solid #ccc;"></center>
 
 This might be only personal, but I find this kind of task very boring while requiring lots of focus. You lose all the fun parts about programming (aka solving a problem).
 
