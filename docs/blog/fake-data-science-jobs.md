@@ -29,7 +29,7 @@ Interesting things to note:
 
 Since I was very curious, I applied to the job offer to understand more about it. I then filled in the basic info they asked for. And then, for some reason, they really wanted me to work with them:
 
-<center>![](https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/blob/main/docs/img/turing-messages.gif?raw=true)</center>
+![](https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/blob/main/docs/img/turing-messages.gif?raw=true)
 
 They kept saying in their messages that I only had a few days to do their tests, and otherwise I would be removed from the recruiting process. What's even more interesting is that they didn't know much about my skills, but they still sent lots of automatic messages, meaning I'm probably not the only one in this case.
 
