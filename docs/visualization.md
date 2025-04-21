@@ -1,6 +1,6 @@
 # Data visualization
 
-I spend quite a bit of time making data visualizations, either for my clients, for a viz challenge, or just for fun.
+I spend quite a bit of time making data visualizations, either for my clients, for a viz challenge, or just for fun. These examples are far from exhaustive, but I just really like the way they look.
 
 <br>
 

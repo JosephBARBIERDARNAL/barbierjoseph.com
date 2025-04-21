@@ -1,10 +1,10 @@
 ## Consulting
 
-Most of my consulting services center around **data science projects**, utilizing Python or R. I regularly employ tools such as Git/GitHub, Quarto, and Streamlit, among others.
+Most of my consultancy work focuses on **data science projects**, using Python or R. I also work with tools such as Quarto and React.
 
-On the web development side, I primarily work with React-based applications.
+My core expertise lies in data visualization, [especially with Python's matplotlib](https://www.matplotlib-journey.com/), though I handle a wide variety of projects for my clients.
 
-My core expertise lies in data visualization, especially with Python's matplotlib, though I handle a wide variety of projects for my clients. If you're interested, feel free to contact me:
+If you're interested, feel free to contact me:
 
 <div style="display: flex; align-items: center;">
   <code id="email" style="margin-right: 10px;">joseph.barbierdarnal@gmail.com</code>
