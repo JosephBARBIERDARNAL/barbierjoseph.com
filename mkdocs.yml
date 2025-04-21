@@ -7,6 +7,8 @@ theme:
     - content.code.copy
     - navigation.instant
     - navigation.instant.progress
+    - navigation.path
+    - navigation.tabs
 
 nav:
   - Home: index.md
