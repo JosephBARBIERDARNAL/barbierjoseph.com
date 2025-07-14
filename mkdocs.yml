@@ -3,6 +3,7 @@ site_url: hhtps://www.barbierjoseph.com
 theme:
   name: material
   custom_dir: overrides
+  favicon: img/favicon.ico
   features:
     - content.code.copy
     - navigation.instant
@@ -14,7 +15,6 @@ nav:
   - Home: index.md
   - Blog:
       - blog/how-not-to-do-a-data-science-project.md
-      - blog/3-repos-1-package-why.md
       - blog/fake-data-science-jobs.md
       - blog/its-not-even-correlation.md
       - blog/does-chatGPT-regret-what-it-says.md
