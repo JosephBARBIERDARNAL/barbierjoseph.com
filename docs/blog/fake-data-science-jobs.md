@@ -1,4 +1,4 @@
-# Fake Data Science Jobs
+# Fake data science jobs
 
 <div class="read-time">
 
