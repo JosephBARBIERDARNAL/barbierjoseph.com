@@ -49,6 +49,8 @@ I also have very few calls (between 1 and 3 per week). They last around 20 minut
 
 #### Workload
 
+![](../img/contrib-github.png)
+
 It's very hard for me to estimate how much I work on average. And since I spend a significant amount of time doing open source work (e.g., not for clients), I need to take that into account.
 
 I do believe that if I only take freelance work into account and if I wanted to, I could easily fit everything into a **9 to 4 (6 hours per day), Monday to Friday**, with many weeks off over the year. If I include open source work, I think it would be more a **9 to 6, Monday to Sunday**.
