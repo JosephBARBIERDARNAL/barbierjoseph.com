@@ -80,6 +80,6 @@ To be honest, I don't feel like there are major downsides. I still made a list b
 
 - Luck is very useful. I'm 100% sure I had more luck than average people. If I started over, I wouldn't expect the same results.
 - A single person can have a MASSIVE impact on your life, and you **can't** predict it. Yan and David mentioned before are just two examples that changed the picture significantly in my case.
-- Life is great
+- Life is great.
 
 <br>
