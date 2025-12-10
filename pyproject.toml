@@ -1,9 +1,13 @@
 [project]
 name = "barbierjoseph"
 version = "0.1.0"
-description = "Add your description here"
+description = "My blog"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "mkdocs-material>=9.7.0",
 ]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
