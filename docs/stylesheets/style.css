@@ -14,22 +14,22 @@ h2 {
 }
 
 .md-header {
-  background-color: darkgoldenrod;
+  background-color: #003049;
 }
 
 .md-tabs {
-  background-color: darkgoldenrod;
+  background-color: #003049;
 }
 
 @media (max-width: 768px) {
   .md-nav--primary .md-nav__title[for="__drawer"] {
-    background-color: darkgoldenrod;
+    background-color: #003049;
   }
 }
 
 @media (max-width: 768px) {
   .md-nav--primary .md-nav__title[for="__drawer"] {
-    background-color: darkgoldenrod;
+    background-color: #003049;
   }
 }
 
