@@ -1,0 +1,1175 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="blog/chatGPT-metric-is-not-truthfulness/">
+      
+      
+        <link rel="prev" href="../does-chatGPT-regret-what-it-says/">
+      
+      
+        <link rel="next" href="../statistics-in-our-daily-life/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>ChatGPT's metric is not truthfulness - Joseph Barbier</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/style.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-44BHVZD8BN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-44BHVZD8BN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-44BHVZD8BN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chatgpts-metric-is-not-truthfulness" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Joseph Barbier" class="md-header__button md-logo" aria-label="Joseph Barbier" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Joseph Barbier
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ChatGPT's metric is not truthfulness
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Joseph Barbier" class="md-nav__button md-logo" aria-label="Joseph Barbier" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Joseph Barbier
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-source-starts-with-a-good-issue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open source starts with a good issue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lessons-after-one-year-of-data-science-freelancing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons after one year of data science freelancing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-not-to-do-a-data-science-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How (not) to do a data science project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fake-data-science-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fake data science jobs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../its-not-even-correlation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    It's not even correlation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../does-chatGPT-regret-what-it-says/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Does chatGPT regret what it says?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ChatGPT's metric is not truthfulness
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ChatGPT's metric is not truthfulness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TLDR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foreword-how-an-llm-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foreword: how an LLM works?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Foreword: how an LLM works?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#probability-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probability distribution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistical model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word-embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Word embedding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fine tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-a-broader-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        On a broader level
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinforcement-learning-with-human-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reinforcement learning with human feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goodharts-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goodhart's law
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#various-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Various information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-and-upgrade-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility and upgrade direction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-remarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closing remarks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../statistics-in-our-daily-life/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Statistics in our daily life
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dont-try-to-reverse-engineer-the-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Don't try to reverse engineer the data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TLDR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foreword-how-an-llm-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foreword: how an LLM works?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Foreword: how an LLM works?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#probability-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Probability distribution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistical model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Machine learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#word-embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Word embedding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fine tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-a-broader-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        On a broader level
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinforcement-learning-with-human-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reinforcement learning with human feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goodharts-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Goodhart's law
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#various-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Various information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-and-upgrade-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility and upgrade direction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-remarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closing remarks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../open-source-starts-with-a-good-issue/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Blog
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="chatgpts-metric-is-not-truthfulness">ChatGPT's metric is not truthfulness</h1>
+<div class="read-time">
+
+Estimated read time: 10 min
+
+</div>
+
+<h2 id="tldr">TLDR</h2>
+<p>Language models such as ChatGPT, for a given prompt, try to predict which word is most likely. Once they have done so, they repeat until the most likely word is the end of the sentence. The associated probabilities are defined using the training data in the model. Based on this, we can easily see that these models do not try to tell true things or give the best possible outcome (relative to what we would want), but only the most likely outcome. Furthermore, because of the way they are constructed, large language models have various unresolved interpretability and safety issues. Reinforcement learning with human feedback does not seem to be a very scalable way to make models safe, although OpenAI seems to think it might work.</p>
+<h2 id="foreword-how-an-llm-works">Foreword: how an LLM works?</h2>
+<p>If you are already familiar with the following concepts, you can skip this section because there will be nothing more: probability distribution, statistical model, machine learning, word embedding and fine tuning. It doesn't really matter if you don't understand everything. It is very complex and not necessary to understand the core of this article.</p>
+<h3 id="probability-distribution">Probability distribution</h3>
+<p>A probability distribution is a way of describing the chances or probabilities of different things happening in a given situation. It is like a map that shows all the possible outcomes and the likelihood of them occurring. By looking at this map, we can determine what the most likely outcome is, what the range of possible outcomes is, and what the probability of the different outcomes is. A language model wants to predict what is the most likely word that will occur (not totally accurate, but that doesn't matter here) after a sequence of words. For example, what is the most likely word after the sentence "The day is off to a bad start, my car crashed this …"? A language model might suggest something like "morning" with 60%, "afternoon" with 25%, "evening" with 10%, and other words for the last 5%. This is a probability distribution of what is the most likely word for that sentence.</p>
+<h3 id="statistical-model">Statistical model</h3>
+<p>A statistical model is a simplified representation of a real-world situation that uses mathematics to help us understand how different factors relate to each other. It allows us to make predictions about what might happen in the future based on what we have observed in the past. Think of it as a map that helps us navigate and understand a complex landscape. Just as a map can show us the location of different cities or landmarks, a statistical model can help us understand how different variables such as age, gender, income, or education may relate to each other. Although statistical models involve mathematics, you don't need to know it to understand the basic concepts behind it. The parameters of language models are determined so that they predict the next most likely word at a given state. To do this, we show them many examples (mostly texts from the Internet) and they keep the patterns present in these texts. Example: most conversations containing "How are you?" are followed by "Fine, and you?" (or something similar). It is not a universal property that we respond with "Fine, and you?", but it is a pattern in the sense that it is something that happens most of the time. ChatGPT is a complex language model that "understands" many (most?) of the language patterns that we (humans) use when we communicate via text.</p>
+<h3 id="machine-learning">Machine learning</h3>
+<p>Machine learning is a method of teaching computers to perform tasks without being explicitly programmed to do so. Instead of giving the computer a set of instructions, you give it a large amount of data and let it "learn" patterns and relationships in the data. The computer uses these patterns to make predictions or decisions on new data that it has not seen before. Machine learning is used in a wide range of applications, from image and speech recognition to recommendation systems and self-driving cars.</p>
+<h3 id="word-embedding">Word embedding</h3>
+<p>Since computers cannot interpret text itself, we had to create an architecture that allows us to go from text to mathematics, and from mathematics to text (to put it simply). Word embedding is a technique used in natural language processing to represent words as numerical vectors (if you are not at all familiar with vectors, think of them as mathematical objects, like numbers, functions, addition…) in a high-dimensional space. This allows machines to analyze and understand the meaning of words based on their relationships to other words in the same space. Essentially, word embedding helps computers interpret language in a way that approximates the way humans do. The beauty of vectors is that you can do mathematical operations on them, unlike text. For example, a famous example of embedding is that when we remove the vector equivalent of "man" from the vector equivalent of "king" and add the vector equivalent of "woman", we get the vector equivalent of "queen", which makes a lot of sense to us! More intuitively: king - man + woman = queen.</p>
+<h3 id="fine-tuning">Fine tuning</h3>
+<p>Fine-tuning is a common approach used in natural language processing (NLP) to improve the performance of pre-trained models on specific tasks such as text classification, language translation or question answering. First, ChatGPT was pre-trained on many different texts from the Internet without any specialization (i.e., it does not specialize in translation, code completion, text classification or anything else). Then it was fine tuned using reinforcement learning with human feedback (we will see later what this is about). This means that we ask humans to chat with it, and every time the response is considered harmful, sexist or racist, people send it negative feedback to make it learn the pattern it should avoid, and vice versa. By doing this many times, the model tends not to be harmful.</p>
+<h3 id="on-a-broader-level">On a broader level</h3>
+<p>ChatGPT has been trained on a lot of text from the internet, and the internet contains a lot of stuff: from Javascript code to German literature to Minecraft sub reddits. From this, it learns text patterns and draws generalizations from them. When we give it a prompt, it puts a probability distribution on the most likely word that should appear. If we use our last example, the model predicts "The day is off to a bad start, my car crashed this morning" since "morning" is the most likely word. It will then repeat the same thing, but the prompt will be "The day is off to a bad start, my car crashed this morning" and predict the next word, over and over, until the most likely word is the end of the sequence. The most important thing to keep in mind about how chatGPT works is that it doesn't use the Internet or any database, but only tries to predict the most likely word based on what it has seen. And while there may be a correlation between them, what is true and what is most likely are not the same thing. Now that you know the basics of how LLMs like ChatGPT work, let's look at the problems in more detail.</p>
+<p>Example of how LLM like ChatGPT responds to the prompt: "Hello sir, any mail for":</p>
+<ul>
+<li>chatGPT calculating a probability distribution of what the next word in this state might be "Hello sir, any mail for me"</li>
+<li>chatGPT calculating a probability distribution of what the next word in this state might be "Hello sir, any mail for me today?"</li>
+<li>chatGPT calculating a probability distribution of what the next word in this state might be "Hello sir, any mail for me today? No"</li>
+<li>chatGPT calculating a probability distribution of what the next word in this state might be "Hello sir, any mail for me today? No sorry"</li>
+</ul>
+<p>This will happen until the most likely word is nothing. Actually, chatGPT doesn't really try to predict words but rather tokens, but you can consider it more or less the same thing.</p>
+<h2 id="reinforcement-learning-with-human-feedback">Reinforcement learning with human feedback</h2>
+<p>Reinforcement learning (RL) is a type of machine learning in which an agent learns to perform a task through trial and error. The agent interacts with an environment, receives feedback in the form of rewards or penalties, and uses this feedback to adjust its behavior over time. The agent's goal is to maximize its long-term reward by learning which actions to take in which situations.</p>
+<p>One approach to using human feedback in RL is to have humans provide feedback during the learning process. In this case, humans can guide the agent on what actions to take in certain situations, or provide feedback on the agent's decisions in real time. This type of feedback can be particularly useful in situations where the agent is learning a complex task and may need additional guidance to achieve good performance.</p>
+<p>In the case of LLMs, OpenAI (the creators of ChatGPT) used reinforcement learning with human feedback (RLHF) by employing dozens of people (called AI trainers) and asking them to rank model outputs for a given text input.</p>
+<p>Who did it? What were the criteria? Since the goal of RLHF is to make LLMs less harmful, we need to define them. If we want to be rigorous, we should make explicit the method used since this is an important feature of ChatGPT. But OpenAI chooses not to give any information about this: what was considered harmful? Were instructions given to the AI trainers before or during the training phase? The heart of the problem is that this method will never be 100% safe since it is approximate: the model will tend to be non-harmful (according to a subjective, undefined definition). With enough roleplay (example here), you can make ChatGPT say harmful things easily. Rather than working on the real security issues like developing a better understanding of LLM decisions (interpretability issues), OpenAI unfortunately chose the easy way out. Moreover, according to Time magazine, there are other ethical problems (not discussed here).</p>
+<h2 id="goodharts-law">Goodhart's law</h2>
+<p>ChatGPT's metric is not truthfulness As you should understand by now, ChatGPT is not a search engine. Rather, it is an agent that tries to suggest as many answers as possible to our prompts. However, unlike a human agent, its reasoning is very specific: it predicts what the most likely word will be until the end of the sequence. And what is most plausible in a discussion and the truth are not the same thing. The metric of ChatGPT is not truthfulness. In fact, we are not able to create a similar ChatGPT whose goal will be to say what is true since it is extremely complex to formally ask an LLM to be as true as possible. One could argue that we can simply train the LLM only on texts that are true. But how do we objectively distinguish a text that is true from one that is not? What is true (not so easy to answer…)? And even if we were able to solve these questions, there is no reason to think that this guarantees that the model will only say true things.</p>
+<p>What if ChatGPT's metric was truthfulness? Goodhart's Law (named after the economist Charles Goodhart) is a concept that states that "When a measure becomes a goal, it ceases to be a good measure". In other words, when a specific measure or indicator is used to assess or induce a particular behavior, people may change their behavior to achieve that measure, even though it may not reflect the true desired outcome. This can lead to unintended consequences and distortions in the system being measured. This means that even if we create a model that optimizes for veracity, there will still be no reason for the model to say the wrong things. One name for this problem is the specification gaming: we are not able to specify clearly what we want. You can find examples of this problem in this article from Deepmind.</p>
+<p>More generally, the measurement problem is not specific to the field of AI but to statistics as a whole. I will soon write an article on a similar topic. Check out this excellent article about the same subject (also available as a podcast) if you are interested.</p>
+<h2 id="various-information">Various information</h2>
+<p>ChatGPT is overconfident, regardless of his "knowledge". It regularly says false things with the same confidence as basic facts. It is problematic when users with no knowledge of how LLMs work (probably the majority of its current users) use it.</p>
+<p>Examples of LLMs that are harmful, behave strangely or are used maliciously:</p>
+<ul>
+<li><a href="https://www.lesswrong.com/posts/jtoPawEhLNXNxvgTT/bing-chat-is-blatantly-aggressively-misaligned">Chat is blatantly, aggressively misaligned</a></li>
+<li><a href="https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation">SolidGoldMagikarp (plus, prompt generation)</a></li>
+<li><a href="https://www.esecurityplanet.com/threats/chatgpt-malware/">ChatGPT's Dark Side: An Endless Supply of Polymorphic Malware</a></li>
+</ul>
+<h2 id="utility-and-upgrade-direction">Utility and upgrade direction</h2>
+<p>ChatGPT is extremely powerful and very impressive. It is ultra versatile, can handle complex concepts, and can be very useful (assuming you don't use it blindly) for specific tasks like summarizing, solving coding problems, proposing an outline for an essay… It's probably not a problem in itself to use it on a daily basis: it can be an incredible time-saving tool. But it is not the right tool when you want to learn history, check facts, and generally find accurate information. For example, a journalist has to be careful when using it, especially since he can't give any references (and if he does, you might be surprised by the accuracy of them).
+fake reference</p>
+<p>chatGPT which gives a reference that has the same title conventions as other research papers, but does not exist (I did not use prompt engineering).</p>
+<p>LLMs are complex models that require people working on their interpretability. If OpenAI really wanted to create safe AI ("We will attempt to directly build safe and beneficial AGI" OpenAI), they would probably choose to focus more on LLM interpretability rather than using RLHF to prevent non-safety.</p>
+<h2 id="closing-remarks">Closing remarks</h2>
+<p>The real problem with all of these issues is that they won't be solved with the next default LLM. A more powerful model might just focus on these issues.</p>
+<p>I really hope that the problems with ChatGPT, and LLMs more generally, are now a bit clearer. It's important that we understand the tools we decide to use, especially when they're used by millions of people around the world and will probably tend to grow rapidly.</p>
+<h2 id="feedback">Feedback</h2>
+<p>Having a different opinion? A nuance to bring? A question to ask? Please share it!</p>
+<p>I'm always looking for feedback. The best way to share your thoughts is to open an issue on the <a href="https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/issues">GitHub repository</a> of the site.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <!-- Footer Section -->
+<center><code>joseph@ysunflower.com</code></center>
+<div class="footer-icons">
+  <a
+    href="https://github.com/JosephBARBIERDARNAL"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="icon-link github"
+    aria-label="GitHub"
+  >
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/joseph-barbier-4ab531224/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="icon-link linkedin"
+    aria-label="LinkedIn"
+  >
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+<!-- Embedded CSS for Hover Effects -->
+<style>
+  /* Container Styling */
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0 50px 0;
+  }
+
+  /* Common Link Styling */
+  .icon-link {
+    font-size: 3.5em;
+    color: #000; /* Set default color to black */
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Remove individual color assignments from default state */
+  /* Individual Icon Colors on Hover */
+  .github:hover {
+    color: #333; /* Original GitHub Color (adjust if needed) */
+  }
+
+  .twitter:hover {
+    color: #1da1f2; /* Twitter Original Color */
+  }
+
+  .linkedin:hover {
+    color: #0077b5; /* LinkedIn Original Color */
+  }
+
+  .email:hover {
+    color: #d44638; /* Email Original Color */
+  }
+
+  /* Hover Effects */
+  .icon-link:hover {
+    transform: scale(1.2);
+  }
+
+  /* Optional: Remove focus outline for better aesthetics */
+  .icon-link:focus {
+    outline: none;
+  }
+</style>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.path"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

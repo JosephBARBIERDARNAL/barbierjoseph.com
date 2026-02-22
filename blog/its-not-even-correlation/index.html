@@ -1,0 +1,965 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="blog/its-not-even-correlation/">
+      
+      
+        <link rel="prev" href="../fake-data-science-jobs/">
+      
+      
+        <link rel="next" href="../does-chatGPT-regret-what-it-says/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>It's not even correlation - Joseph Barbier</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/style.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-44BHVZD8BN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-44BHVZD8BN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-44BHVZD8BN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#its-not-even-correlation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Joseph Barbier" class="md-header__button md-logo" aria-label="Joseph Barbier" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Joseph Barbier
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              It's not even correlation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Joseph Barbier" class="md-nav__button md-logo" aria-label="Joseph Barbier" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Joseph Barbier
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-source-starts-with-a-good-issue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open source starts with a good issue
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lessons-after-one-year-of-data-science-freelancing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons after one year of data science freelancing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-not-to-do-a-data-science-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How (not) to do a data science project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fake-data-science-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fake data science jobs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    It's not even correlation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    It's not even correlation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TLDR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causality-everywhere-dumb-brain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causality everywhere, dumb brain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#focus-on-differences-not-similarities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Focus on differences, not similarities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-sure-you-are-measuring-something" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Make sure you are measuring something
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-remarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closing remarks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../does-chatGPT-regret-what-it-says/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Does chatGPT regret what it says?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatGPT-metric-is-not-truthfulness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ChatGPT's metric is not truthfulness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../statistics-in-our-daily-life/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Statistics in our daily life
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dont-try-to-reverse-engineer-the-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Don't try to reverse engineer the data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TLDR
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causality-everywhere-dumb-brain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Causality everywhere, dumb brain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#focus-on-differences-not-similarities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Focus on differences, not similarities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-sure-you-are-measuring-something" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Make sure you are measuring something
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-remarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closing remarks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feedback
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../open-source-starts-with-a-good-issue/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Blog
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="its-not-even-correlation">It's not even correlation</h1>
+<div class="read-time">
+
+Estimated read time: 5 min
+
+</div>
+
+<h2 id="tldr">TLDR</h2>
+<p>Our brains often jump to conclusions about causality without good reason, looking for patterns and links where there are none. In everyday life, we may mistakenly assume that there is a causal link based on a simple correlation. For example, when studying success, it's important to focus on differences rather than similarities, and not to rely on self-reported data, as individuals may not really understand the reasons for their own success. Chance plays a bigger role than we think, and understanding it can help avoid logical fallacies. For more on this subject, read "Fooled by Randomness".</p>
+<p>To understand the characteristics of a group, it is essential to take into account the characteristics of people outside the group. False data are used to show that studying a population group does not provide information about what defines it. It is necessary to compare populations and look for differences rather than similarities. People often overlook what they don't know, which underlines the importance of being aware of missing information.</p>
+<h2 id="causality-everywhere-dumb-brain">Causality everywhere, dumb brain</h2>
+<p>We tend to fall easily into the trap of inferring causality without valid reasons. To get those reasons, you need solid data. However, this article is not about the error that can be found in research or data analysis, but in our everyday lives.</p>
+<p>Indeed, human beings often tend to infer causal links, even if they are unfounded. Our brains often look for patterns and connections, and we sometimes mistakenly perceive cause and effect where there is none. While solid data and rigorous analysis are needed to establish cause-and-effect relationships in scientific research, in everyday life we don't always have access to such solid evidence. This can lead to various biases and logical fallacies when trying to determine causality.</p>
+<p>One example is the correlation-causation fallacy, where people assume that simply because two things are correlated, one must be the cause of the other. However, correlation alone does not imply causation. Other underlying factors or coincidences may be behind the observed relationship. However, what I want to talk about here is the fact that most of the time, what we observe is not even a correlation.</p>
+<h2 id="focus-on-differences-not-similarities">Focus on differences, not similarities</h2>
+<p>Suppose you want to know what makes people successful. There are two different ways of approaching this problem.</p>
+<ul>
+<li>looking for correlating factors: looking for things that successful people do/have/are and that others don't.</li>
+<li>looking for causal factors: looking for the determinants of success (not discussed in this article).</li>
+</ul>
+<p>We (and most people interested in this subject) decide to take the simplest option with correlated factors. Intuitively, we want to interview different successful people and ask them questions about their lifestyle, the reasons for their success and try to find commonalities. But this method poses a major problem: we have to look for differences, not similarities. The famous reasons that I have the impression people associate with success are: working hard, being fit/exercising regularly, being highly motivated, reading, meditating, etc. And it's plausible that, in the course of interviews, these elements come up in discussion. However, if most successful people play sports regularly, does that mean there's a correlation with being successful and those? Not at all.</p>
+<p>That's where the differences are important. It makes no sense to look for similarities since you have nothing to compare your sample to. For example, many unsuccessful people play sports regularly. We're probably looking for similarities because we have preconceptions about what makes people successful.</p>
+<p>What's more, during the interview, the interviewee confidently told you that he or she did sport and considered it an important part of his or her success. But unfortunately, there's no reason to think they know why they're considered successful. Would you ask a sick person the reason for their illness? It's bad practice to be the subject of your own study. That's why randomized controlled trials are conducted and placebos are used. In "Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets", Nassim Taleb explains why we don't like chance as an explanation of a phenomenon, why it happens more often than we think, and how we tend to rationalize it. If you want to go further, this is the book for you.</p>
+<h2 id="make-sure-you-are-measuring-something">Make sure you are measuring something</h2>
+<p>When you want to know the characteristics of a group of people, you have to make sure that you always have the characteristics of people who are not part of that group. Otherwise, you probably won't be measuring anything at all. To make this more intuitive, let's take some examples. I've arbitrarily taken two characteristics: time spent reading and time spent doing sport.</p>
+<p>In our minds, it might look like this: the more you read and do sport, the more likely you are to succeed. If this data were true, the final conclusion would be logical.</p>
+<p>But this is only possible because we are not only looking at the characteristics of one group, but of everyone. If we only look at the characteristics of a group, we can't say anything about what defines it.</p>
+<p>On Angela Duckworth's Wikipedia page (a professor who wrote a bestseller entitled "Grit: The Power of Passion and Perseverance"), we read that "Duckworth found that courage was a common factor in the high-achievers she studied". With the last sentence, we have no reason to draw any conclusions about "high achievers", contrary to what it suggests*. It illustrates that "studying" a population group gives you no information about what makes them part of that group.</p>
+<p>*<em>Note: I'm not familiar with Duckworth's work (I've only read her book) and she's probably not the author of this sentence, but this example illustrates my point well.</em></p>
+<p>Moreover, by looking only at successful people, we can easily forget that there is actually no relationship between the two characteristics. And the only way to know that, is to compare populations and seek for differences instead of similarities.</p>
+<p>Next time someone tells you "most people doing X is Y", check if this can be simply explained by "most people are doing X".</p>
+<h2 id="closing-remarks">Closing remarks</h2>
+<p>Conceptually, depending on what you know at the time, you can give "epistemological weight" to your beliefs. Intuitively, think of it like what your experience (not only the personal, but everything you've seen, read etc) tells you that you should believe. For example, if you lived in Nigeria in the 1000's and you have never seen a white person, should you think that it's impossible to have a white skin? If you never heard about white people, you probably should. However, for example, if one of your friends shows you a picture of him with a white person, you probably shouldn't. Even if you are wrong a posteriori in the first case, you had more reasons to think that only black skin existed. From this perspective, you were right.</p>
+<p>This might sound like a reasonable way to think. However, that is far from what we tend to do. The biggest mistake we make is to forget what we don't know. And since it's impossible to know what we don't know, we have to be rigorous and always aware that we may be missing out on important information.</p>
+<h2 id="feedback">Feedback</h2>
+<p>Having a different opinion? A nuance to bring? A question to ask? Please share it!</p>
+<p>I'm always looking for feedback. The best way to share your thoughts is to open an issue on the <a href="https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/issues">GitHub repository</a> of the site.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <!-- Footer Section -->
+<center><code>joseph@ysunflower.com</code></center>
+<div class="footer-icons">
+  <a
+    href="https://github.com/JosephBARBIERDARNAL"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="icon-link github"
+    aria-label="GitHub"
+  >
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/joseph-barbier-4ab531224/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="icon-link linkedin"
+    aria-label="LinkedIn"
+  >
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+<!-- Embedded CSS for Hover Effects -->
+<style>
+  /* Container Styling */
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0 50px 0;
+  }
+
+  /* Common Link Styling */
+  .icon-link {
+    font-size: 3.5em;
+    color: #000; /* Set default color to black */
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Remove individual color assignments from default state */
+  /* Individual Icon Colors on Hover */
+  .github:hover {
+    color: #333; /* Original GitHub Color (adjust if needed) */
+  }
+
+  .twitter:hover {
+    color: #1da1f2; /* Twitter Original Color */
+  }
+
+  .linkedin:hover {
+    color: #0077b5; /* LinkedIn Original Color */
+  }
+
+  .email:hover {
+    color: #d44638; /* Email Original Color */
+  }
+
+  /* Hover Effects */
+  .icon-link:hover {
+    transform: scale(1.2);
+  }
+
+  /* Optional: Remove focus outline for better aesthetics */
+  .icon-link:focus {
+    outline: none;
+  }
+</style>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.path"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
