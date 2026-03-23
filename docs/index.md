@@ -4,7 +4,7 @@
 
 <h1 style="text-align: center;">Hi! I'm Joseph</h1>
 
-I recently founded [yellow sunflower](https://ysunflower.com/), an organization dedicated to creating **open-source tools** for data scientists and offering **data consulting services**.
+I recently founded [yellow sunflower](https://ysunflower.com/), an organization offering **data consulting services** and developing **open-source tools** for data scientists.
 
 === "Consulting"
 
@@ -14,7 +14,7 @@ I recently founded [yellow sunflower](https://ysunflower.com/), an organization 
 
 === "Open source"
 
-    Most of my open-source work focuses on **data visualization**. I've developed and maintain [multiple Python packages](https://github.com/y-sunflower) and made tons of contributions to the [Python Graph Gallery](https://github.com/holtzy/The-Python-Graph-Gallery) and the [R Graph Gallery](https://github.com/holtzy/R-graph-gallery).
+    Most of my open-source work focuses on **data visualization** and **Typst**. I've developed and maintain [multiple Python/R packages](https://www.ysunflower.com/open-source) and made tons of contributions to the [Python Graph Gallery](https://github.com/holtzy/The-Python-Graph-Gallery) and the [R Graph Gallery](https://github.com/holtzy/R-graph-gallery).
 
     Sometimes I try to contribute to other projects too!
 
