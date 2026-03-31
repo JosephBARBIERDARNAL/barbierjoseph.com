@@ -1,0 +1,42 @@
+.read-time {
+  color: gray;
+  font-style: italic;
+  font-size: medium;
+}
+
+.quote {
+  color: #837f7f;
+  font-style: italic;
+}
+
+h2 {
+  margin-top: 3em !important;
+}
+
+.md-header {
+  background-color: #003049;
+}
+
+.md-tabs {
+  background-color: #003049;
+}
+
+@media (max-width: 768px) {
+  .md-nav--primary .md-nav__title[for="__drawer"] {
+    background-color: #003049;
+  }
+}
+
+@media (max-width: 768px) {
+  .md-nav--primary .md-nav__title[for="__drawer"] {
+    background-color: #003049;
+  }
+}
+
+.md-header__button.md-logo {
+  display: none;
+}
+
+.md-typeset ul li {
+  margin-bottom: 0em !important;
+}
