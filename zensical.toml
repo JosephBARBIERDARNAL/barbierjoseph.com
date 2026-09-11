@@ -1,0 +1,51 @@
+[project]
+site_name = "Joseph Barbier"
+site_url = "hhtps://www.barbierjoseph.com"
+nav = [
+  { "Home" = "index.md" },
+  { "Blog" = [
+    "blog/open-source-starts-with-a-good-issue.md",
+    "blog/lessons-after-one-year-of-data-science-freelancing.md",
+    "blog/how-not-to-do-a-data-science-project.md",
+    "blog/fake-data-science-jobs.md",
+    "blog/its-not-even-correlation.md",
+    "blog/does-chatGPT-regret-what-it-says.md",
+    "blog/chatGPT-metric-is-not-truthfulness.md",
+    "blog/statistics-in-our-daily-life.md",
+    "blog/dont-try-to-reverse-engineer-the-data.md",
+  ] },
+]
+
+extra_css = [
+  "stylesheets/style.css",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+]
+
+[project.theme]
+variant = "classic"
+custom_dir = "overrides"
+favicon = "img/favicon.ico"
+features = [
+  "content.code.copy",
+  "navigation.instant",
+  "navigation.instant.progress",
+  "navigation.path",
+]
+
+[project.extra.analytics]
+provider = "google"
+property = "G-44BHVZD8BN"
+
+[project.markdown_extensions]
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.snippets = {}
+pymdownx.superfences = {}
+pymdownx.tabbed.alternate_style = true
+pymdownx.blocks.caption = {}
+pymdownx.details = {}
+attr_list = {}
+md_in_html = {}
+admonition = {}
