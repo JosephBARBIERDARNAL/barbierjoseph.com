@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="blog/open-source-starts-with-a-good-issue/">
+        <link rel="canonical" href="hhtps://www.barbierjoseph.com/blog/open-source-starts-with-a-good-issue/">
       
       
         <link rel="prev" href="../..">
@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="zensical-0.0.60">
     
     
       
@@ -29,7 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/classic/main.e0592429.min.css">
       
       
 
@@ -43,7 +46,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -52,7 +55,7 @@
     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
   
@@ -76,7 +79,7 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
     <div data-md-component="skip">
       
         
@@ -102,7 +105,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
@@ -130,45 +133,20 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
 </div>
       
     
-    
+    <div class="md-header__source">
+      
+    </div>
   </nav>
   
 </header>
@@ -219,8 +197,7 @@
   <span class="md-ellipsis">
     
   
-    Home
-  
+  Home
 
     
   </span>
@@ -259,8 +236,7 @@
   <span class="md-ellipsis">
     
   
-    Blog
-  
+  Blog
 
     
   </span>
@@ -275,8 +251,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Blog
-  
+  Blog
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -291,7 +266,9 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+        <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
       
         
@@ -304,8 +281,7 @@
   <span class="md-ellipsis">
     
   
-    Open source starts with a good issue
-  
+  Open source starts with a good issue
 
     
   </span>
@@ -315,15 +291,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Open source starts with a good issue
-  
+  Open source starts with a good issue
 
     
   </span>
@@ -334,7 +309,8 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -343,16 +319,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#open-source-is-hard" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Open source is hard
-      
+      </span>
     </span>
   </a>
   
@@ -361,9 +337,9 @@
         <li class="md-nav__item">
   <a href="#good-issues-are-contributions-too" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         (Good) issues are contributions too
-      
+      </span>
     </span>
   </a>
   
@@ -373,9 +349,9 @@
           <li class="md-nav__item">
   <a href="#optional-interlude-with-a-concrete-example" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         (Optional) Interlude with a concrete example
-      
+      </span>
     </span>
   </a>
   
@@ -389,9 +365,9 @@
         <li class="md-nav__item">
   <a href="#learn-how-to-write-reprexes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Learn how to write reprexes
-      
+      </span>
     </span>
   </a>
   
@@ -400,9 +376,9 @@
         <li class="md-nav__item">
   <a href="#find-your-next-contribution" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Find your next contribution!
-      
+      </span>
     </span>
   </a>
   
@@ -411,9 +387,9 @@
         <li class="md-nav__item">
   <a href="#feedback" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Feedback
-      
+      </span>
     </span>
   </a>
   
@@ -442,8 +418,7 @@
   <span class="md-ellipsis">
     
   
-    Lessons after one year of data science freelancing
-  
+  Lessons after one year of data science freelancing
 
     
   </span>
@@ -470,8 +445,7 @@
   <span class="md-ellipsis">
     
   
-    How (not) to do a data science project
-  
+  How (not) to do a data science project
 
     
   </span>
@@ -498,8 +472,7 @@
   <span class="md-ellipsis">
     
   
-    Fake data science jobs
-  
+  Fake data science jobs
 
     
   </span>
@@ -526,8 +499,7 @@
   <span class="md-ellipsis">
     
   
-    It's not even correlation
-  
+  It's not even correlation
 
     
   </span>
@@ -554,8 +526,7 @@
   <span class="md-ellipsis">
     
   
-    Does chatGPT regret what it says?
-  
+  Does chatGPT regret what it says?
 
     
   </span>
@@ -582,8 +553,7 @@
   <span class="md-ellipsis">
     
   
-    ChatGPT's metric is not truthfulness
-  
+  ChatGPT's metric is not truthfulness
 
     
   </span>
@@ -610,8 +580,7 @@
   <span class="md-ellipsis">
     
   
-    Statistics in our daily life
-  
+  Statistics in our daily life
 
     
   </span>
@@ -638,8 +607,7 @@
   <span class="md-ellipsis">
     
   
-    Don't try to reverse engineer the data
-  
+  Don't try to reverse engineer the data
 
     
   </span>
@@ -669,10 +637,12 @@
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
+                  
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -681,16 +651,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#open-source-is-hard" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Open source is hard
-      
+      </span>
     </span>
   </a>
   
@@ -699,9 +669,9 @@
         <li class="md-nav__item">
   <a href="#good-issues-are-contributions-too" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         (Good) issues are contributions too
-      
+      </span>
     </span>
   </a>
   
@@ -711,9 +681,9 @@
           <li class="md-nav__item">
   <a href="#optional-interlude-with-a-concrete-example" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         (Optional) Interlude with a concrete example
-      
+      </span>
     </span>
   </a>
   
@@ -727,9 +697,9 @@
         <li class="md-nav__item">
   <a href="#learn-how-to-write-reprexes" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Learn how to write reprexes
-      
+      </span>
     </span>
   </a>
   
@@ -738,9 +708,9 @@
         <li class="md-nav__item">
   <a href="#find-your-next-contribution" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Find your next contribution!
-      
+      </span>
     </span>
   </a>
   
@@ -749,9 +719,9 @@
         <li class="md-nav__item">
   <a href="#feedback" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      <span class="md-typeset">
         Feedback
-      
+      </span>
     </span>
   </a>
   
@@ -784,6 +754,7 @@
     <li class="md-path__item">
       <a href="../.." class="md-path__link">
         
+  
   <span class="md-ellipsis">
     Home
   </span>
@@ -799,9 +770,13 @@
   
     
     
+    
+    
+    
       <li class="md-path__item">
-        <a href="./" class="md-path__link">
+        <a href="././" class="md-path__link">
           
+  
   <span class="md-ellipsis">
     Blog
   </span>
@@ -819,8 +794,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
-
 
 <h1 id="open-source-starts-with-a-good-issue">Open source starts with a good issue</h1>
 <div class="read-time">
@@ -857,25 +830,25 @@ Estimated read time: 4 min
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>      <span class="o">.</span><span class="n">with_columns</span><span class="p">(</span><span class="n">pl</span><span class="o">.</span><span class="n">col</span><span class="p">(</span><span class="n">colname</span><span class="p">)</span><span class="o">.</span><span class="n">replace_strict</span><span class="p">(</span><span class="n">CODE_TO_LABEL</span><span class="p">)</span><span class="o">.</span><span class="n">cast</span><span class="p">(</span><span class="n">pl</span><span class="o">.</span><span class="n">String</span><span class="p">))</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>   <span class="p">)</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>   <span class="n">y</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="n">df_agg</span><span class="p">[</span><span class="n">colname</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   <span class="n">x</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="n">df_agg</span><span class="p">[</span><span class="s2">&quot;len&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>   <span class="n">n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">df_agg</span><span class="p">[</span><span class="s2">&quot;len&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>   <span class="nb">max</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">df_agg</span><span class="p">[</span><span class="s2">&quot;len&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>   <span class="n">font</span><span class="p">:</span> <span class="n">FontProperties</span> <span class="o">=</span> <span class="n">load_google_font</span><span class="p">(</span><span class="n">FAMILY</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;bold&quot;</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   <span class="n">x</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="n">df_agg</span><span class="p">[</span><span class="s2">"len"</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>   <span class="n">n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">df_agg</span><span class="p">[</span><span class="s2">"len"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>   <span class="nb">max</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">df_agg</span><span class="p">[</span><span class="s2">"len"</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>   <span class="n">font</span><span class="p">:</span> <span class="n">FontProperties</span> <span class="o">=</span> <span class="n">load_google_font</span><span class="p">(</span><span class="n">FAMILY</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="s2">"bold"</span><span class="p">)</span>
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>   <span class="n">ax</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="hll">   <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">QID_TO_QUESTION</span><span class="p">[</span><span class="n">colname</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="n">font</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="hll">   <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">QID_TO_QUESTION</span><span class="p">[</span><span class="n">colname</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">"black"</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="n">font</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
 </span></span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
 </span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>   <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 </span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>      <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
 </span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="n">x</span><span class="o">=</span><span class="n">val</span> <span class="o">+</span> <span class="nb">max</span> <span class="o">*</span> <span class="mf">0.02</span><span class="p">,</span>
 </span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>            <span class="n">y</span><span class="o">=</span><span class="n">i</span><span class="p">,</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>            <span class="n">s</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;n = </span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">val</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">%)&quot;</span><span class="p">,</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>            <span class="n">s</span><span class="o">=</span><span class="sa">f</span><span class="s2">"n = </span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">val</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">%)"</span><span class="p">,</span>
 </span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>            <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>            <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>            <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
 </span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>      <span class="p">)</span>
 </span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
 </span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>   <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>   <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;src/document/plots/</span><span class="si">{</span><span class="n">colname</span><span class="si">}</span><span class="s2">.png&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">)</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>   <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="sa">f</span><span class="s2">"src/document/plots/</span><span class="si">{</span><span class="n">colname</span><span class="si">}</span><span class="s2">.png"</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">"tight"</span><span class="p">)</span>
 </span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>   <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></code></pre></div>
 <p>For some reason, the chart title (added via <code>set_title()</code>) kept its default size (<code>size=10</code>).</p>
@@ -885,7 +858,7 @@ Estimated read time: 4 min
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.font_manager</span><span class="w"> </span><span class="kn">import</span> <span class="n">FontProperties</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;hey&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="n">FontProperties</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s2">&quot;Roboto&quot;</span><span class="p">))</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"hey"</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="n">FontProperties</span><span class="p">(</span><span class="n">family</span><span class="o">=</span><span class="s2">"Roboto"</span><span class="p">))</span>
 </span></code></pre></div>
 <p>More importantly, while writing the reprex, I realized that the issue only occurs if <code>font</code> is a <code>FontProperties()</code> object (which I was using), but not if it's a string (also accepted), such as <code>"Roboto"</code>.</p>
 <p>The result? I got an answer an hour later saying, "This might be the same issue as this other one." I checked it, confirmed it was the same (but I didn't see it before), closed the issue, and got a workaround for my use case.</p>
@@ -915,6 +888,8 @@ Estimated read time: 4 min
 <h2 id="feedback">Feedback</h2>
 <p>Having a different opinion? A nuance to bring? A question to ask? Please share it!</p>
 <p>I'm always looking for feedback. The best way to share your thoughts is to open an issue on the <a href="https://github.com/JosephBARBIERDARNAL/barbierjoseph.com/issues">GitHub repository</a> of the site.</p>
+
+
 
 
 
@@ -1023,10 +998,10 @@ Estimated read time: 4 min
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.path"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.code.copy","navigation.instant","navigation.instant.progress","navigation.path"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88ee1349.min.js"></script>
       
     
   </body>
