@@ -22,7 +22,7 @@ jobs:
         with:
           enable-cache: true
 
-      - run: uvx run zensical build --clean
+      - run: uvx zensical build --clean
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
