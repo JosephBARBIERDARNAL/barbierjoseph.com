@@ -18,7 +18,7 @@ PDFs are everywhere, but making sure they're accessible to everyone is surprisin
 - Add note on open source tools that claim validating PDF files while they often have a pretty poor coverage of what needs to be checked.
 - Add note about special cases that are (or either look) early stage but are promising: https://github.com/speedata/pdfa11y, https://github.com/focusring/horn
 
-## Rethinking PDF validation, from scratch
+## Rethinking PDF validation
 
 - I use verapdf a lot in my work, so throught time I noted all of the things that I wish would be different, by default, in my dream validator
 - Out of this is:
@@ -40,7 +40,8 @@ The result of this is a project called [page](https://github.com/JosephBARBIERDA
 - around an [order of magnitude faster](https://josephbarbierdarnal.github.io/page/benchmark/) than verapdf
 - passes [100% verapdf corpus test suite](https://github.com/JosephBARBIERDARNAL/page/blob/main/crates/page_cli/src/corpus.rs) (which means that `page` and `verapdf` exactly agree on ~2200 PDF files)
 - compiles to the Wasm (in the browser!), see [the demo](https://josephbarbierdarnal.github.io/page/demo/)
-- easy to use: one line install command and easy-to-read outputs:
+- easy to use: one line install command and easy-to-read outputs
+- page is open source and MIT licensed.
 
 ```console
 $ page document.pdf --profile ua1 --format details
@@ -55,12 +56,12 @@ Time    : 0.052s
 [PDFUA1-PAGE-TABS-001] Conformance: page 4 has annotations but no /Tabs /S entry
 ```
 
-> page is open source and MIT licensed.
-
 key things missing are:
 
 - PDF/A-4, PDF/UA-2 and WTPDF aren't implemented. Those profiles are PDF based on PDF 2.0
 - hints on how to fix failed rules: many failed rule looks like this _"The document catalog dictionary shall include a ViewerPreferences dictionary containing a DisplayDocTitle key, whose value shall be true."_, and I want to translate each of those into a more human-readable way.
+
+> You can find [page on Github](https://github.com/JosephBARBIERDARNAL/page).
 
 ## Fun things learned along the way
 
