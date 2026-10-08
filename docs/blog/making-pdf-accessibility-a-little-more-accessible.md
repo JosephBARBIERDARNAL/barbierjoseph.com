@@ -6,7 +6,7 @@ Estimated read time: 4 min
 
 </div>
 
-PDFs are everywhere, but making sure they're accessible to everyone is surprisingly difficult. A PDF can look perfectly fine while being almost impossible to navigate with a screen reader.
+PDFs are everywhere, but making sure they're accessible to everyone is surprisingly difficult. A PDF can look perfectly fine while being almost impossible to navigate with a screen reader. And even worse, knowing whether a PDF is accessible, and if not, why, isn't a simple thing to do.
 
 ## State of measuring PDF accessibility
 
