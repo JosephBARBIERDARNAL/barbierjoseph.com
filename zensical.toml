@@ -4,6 +4,7 @@ site_url = "hhtps://www.barbierjoseph.com"
 nav = [
   { "Home" = "index.md" },
   { "Blog" = [
+    "blog/making-pdf-accessibility-a-little-more-accessible.md",
     "blog/open-source-starts-with-a-good-issue.md",
     "blog/lessons-after-one-year-of-data-science-freelancing.md",
     "blog/how-not-to-do-a-data-science-project.md",
