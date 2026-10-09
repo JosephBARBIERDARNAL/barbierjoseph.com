@@ -30,6 +30,7 @@ features = [
   "content.code.copy",
   "navigation.instant",
   "navigation.instant.progress",
+  "content.tooltips",
   "navigation.path",
 ]
 
