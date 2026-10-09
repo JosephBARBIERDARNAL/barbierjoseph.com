@@ -10,7 +10,7 @@ PDFs are everywhere, but making sure they're accessible to everyone is surprisin
 
 ## State of measuring PDF accessibility
 
-For PDF accessibility checks, [`veraPDF`](https://verapdf.org/) is the tool I use most. It's open source, well maintained, works well, and is used in many real-world settings.
+For PDF accessibility checks, [`veraPDF`](https://verapdf.org/) is the reference tool. It's open source, well maintained, works well, and is used in many real-world settings.
 
 But it has some limits. First, `veraPDF` requires Java to be installed, which can be a significant barrier for non-technical or semi-technical users. Java can also be awkward to integrate into other tools, such as other programming languages or browser-based WebAssembly applications. It's _technically possible_, but the Java runtime is a poor fit for some of these environments.
 
@@ -18,21 +18,19 @@ Even for technical users, `veraPDF` isn't always easy to use. Its command-line o
 
 Other solutions exist, but they are not open source, are not free (Adobe), or do not work across operating systems (PAC). **Only `veraPDF` matches all of those criteria**.
 
-> There are also open-source tools that claim to validate PDF files but check only a small part of what needs to be checked, so it's worth looking closely at which rules a tool actually covers.
-
 A couple of newer projects look promising: [`pdfa11y`](https://github.com/speedata/pdfa11y) and [`Horn`](https://github.com/focusring/horn). They take different approaches to checking PDF accessibility, and are worth keeping an eye on.
 
 ## Rethinking PDF validation
 
-I use `veraPDF` a lot in my work, so over time I've noted all the things I wish were different.
+I use `veraPDF` a lot in my work, so over time I've noted all the things I wish were different:
 
 - output designed for humans, while staying easy to parse (e.g., JSON export)
 - easy to integrate natively in different places: a CLI for default use, but it should also work in the browser (with Wasm) and in other programming languages (with appropriate bindings)
 - high performance: `veraPDF` can take several seconds to validate a large document, which adds up when you need to validate tons of files
 
-For those reasons (and if I'm being honest, because I like the language), Rust felt like a great fit.
+For those reasons, [Rust](https://rust-lang.org/) felt like a great fit (and if I'm being honest, because I like the language).
 
-Earlier this year (2026), I decided to see if I could make a proof of concept. My goal was to validate the <span title="PDF/A is a family of profiles for long-term document preservation. PDF/A-1b is a relatively simple profile to validate, while PDF/UA-1, the main profile for PDF accessibility, is more complex"><u>PDF/A-1b profile</u></span>.
+Earlier this year (2026), I decided to see if I could make a proof of concept. My goal was to make validator for the <span title="PDF/A-1b is a relatively simple profile to validate, while PDF/UA-1 (the main profile for PDF accessibility) is more complex"><u>PDF/A-1b profile</u></span>.
 
 Once I had a correct version, I decided to implement validation for other PDF profiles too.
 
@@ -72,13 +70,13 @@ Automated validation can't judge everything about accessibility. For example, a 
 
 If `veraPDF` wasn't there to (in)validate `page`'s behavior and give me hints on what it's doing wrong, **I would never have started this project** in the first place. Validating a PDF validator is [surprisingly difficult](https://pdfa.org/how-verapdf-does-pdfa-validation/), and having existing, well-implemented validations makes this _literally_ 100x easier.
 
-Also, `veraPDF` team built a [publicly available test corpus](https://github.com/veraPDF/veraPDF-corpus). I'm pretty sure that was a lot of work, and `page` can reuse it to test itself on clear pass/fail cases. Even though page isn't built on top of `veraPDF`, it feels like it is to me.
+Also, `veraPDF` team built a [publicly available test corpus](https://github.com/veraPDF/veraPDF-corpus). I'm pretty sure that was a lot of work, and `page` (or any validator) can reuse it to test itself on clear pass/fail cases. Even though page isn't built on top of `veraPDF`, it feels like it is to me.
 
 I wish it were easy to compare `page` and `veraPDF` with other implementations such as [PAC](https://pac.pdf-accessibility.org/en) or [Adobe Acrobat](https://www.adobe.com/acrobat.html).
 
 ## Fun things learned along the way
 
-This project also involved a lot of work understanding what a PDF actually is, how PDFs work, why there are so many different kinds of PDFs, and discovering some weird PDF features. My two favorite things I discovered are:
+This project also involved a lot of work understanding what a PDF actually is, how PDFs work, why there are so many different kinds of "PDF profiles", and discovering some weird PDF features. My two favorite things I discovered are:
 
 ### Did you know you can use JavaScript **inside** a PDF?
 
@@ -99,9 +97,9 @@ This isn't something that will happen randomly when making PDFs; you have to "fo
 
 ## What's next
 
-I'm already using `page` daily in my professional work, and I plan to continue. There's still a lot of work to do, especially to fill the PDF 2.0 gap. The key next steps are:
+I'm already using `page` daily in my professional work, and it feels just right. There's still a lot of work to do, especially to fill the PDF 2.0 gap. The key next steps are:
 
 - find testers and users who can share feedback, feature ideas, and bug reports
 - find external contributors, since many issues aren't that complicated to fix
 
-If you think you fit into any of those categories or if you're just interested in PDF accessibility/validation, please feel free to contact me!
+If you think you fit into any of those categories or if you're just interested in PDF accessibility/validation, please feel free to contact me and/or go to the [Github repo](https://github.com/JosephBARBIERDARNAL/page)!
