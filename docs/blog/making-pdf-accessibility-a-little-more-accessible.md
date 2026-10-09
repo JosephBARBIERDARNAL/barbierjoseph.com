@@ -12,7 +12,7 @@ PDFs are everywhere, but making sure they're accessible to everyone is surprisin
 
 For PDF accessibility checks, [`veraPDF`](https://verapdf.org/) is the reference tool. It's open source, well maintained, works well, and is used in many real-world settings.
 
-But it has some limits. First, `veraPDF` requires Java to be installed, which can be a significant barrier for non-technical or semi-technical users. Java can also be awkward to integrate into other tools, such as other programming languages or browser-based WebAssembly applications. It's _technically possible_, but the Java runtime is a poor fit for some of these environments.
+But it has some limits. First, `veraPDF` requires Java to be installed, which can be a significant barrier for non/semi-technical users. Java can also be awkward to integrate into other tools, such as other programming languages or browser-based WebAssembly applications. It's _technically possible_, but the Java runtime is a poor fit for some of these environments.
 
 Even for technical users, `veraPDF` isn't always easy to use. Its command-line output doesn't always clearly **explain accessibility issues** or **how to fix them**.
 
